@@ -1,0 +1,36 @@
+﻿<Project>
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<BaseIntermediateOutputPath>..\obj\Fahrenheit.Core.X2</BaseIntermediateOutputPath>
+		<BaseOutputPath>..\build\Fahrenheit.Core.X2</BaseOutputPath>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<AssemblyName>fhcorex2</AssemblyName>
+	</PropertyGroup>
+
+	<Target Name="CopyAfterBuild" AfterTargets="Build">
+		<PropertyGroup>
+			<CopyToDir>..\build\fahrenheit</CopyToDir>
+		</PropertyGroup>
+
+		<ItemGroup>
+			<ProjectFiles Include="$(TargetDir)\*.*" />
+		</ItemGroup>
+
+		<Message Text="Copying to $(CopyToDir)" Importance="High"/>
+
+		<Copy
+			SourceFiles="@(ProjectFiles)"
+			DestinationFolder="$(CopyToDir)"
+		/>
+
+		<Message Text="Copied build files to $(CopyToDir)." Importance="High" />
+	</Target>
+
+	<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+</Project>
+

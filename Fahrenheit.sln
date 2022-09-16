@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrenheit.Core.X", "Fahrenheit.Core.X\Fahrenheit.Core.X.csproj", "{C3F3CB85-D115-4661-B4C9-D344CC238C2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrenheit.Core.X2", "Fahrenheit.Core.X2\Fahrenheit.Core.X2.csproj", "{28041EFD-BAFC-4FD6-B40D-4AB96B13FDAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C3F3CB85-D115-4661-B4C9-D344CC238C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3F3CB85-D115-4661-B4C9-D344CC238C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3F3CB85-D115-4661-B4C9-D344CC238C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28041EFD-BAFC-4FD6-B40D-4AB96B13FDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28041EFD-BAFC-4FD6-B40D-4AB96B13FDAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28041EFD-BAFC-4FD6-B40D-4AB96B13FDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28041EFD-BAFC-4FD6-B40D-4AB96B13FDAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
