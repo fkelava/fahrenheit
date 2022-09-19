@@ -1,0 +1,4119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="42">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1732</ID>
+      <Description>"Load controls"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>81</ID>
+          <Description>"Load: Map load delay (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F30810</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>82</ID>
+          <Description>"Load: Map load delay (alt?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F30814</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"Load: Map load in progress (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F3080C</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1050</ID>
+      <Description>"Scenario Flag"</Description>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1051</ID>
+          <Description>"Scenario Flag / SP (Main)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>FFX.exe+D2D67C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1052</ID>
+          <Description>"Scenario Flag / SP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>FFX.exe+EFB784</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1053</ID>
+          <Description>"Scenario Flag / SP"</Description>
+          <VariableType>2 Bytes</VariableType>
+          <Address>FFX.exe+84949C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1054</ID>
+          <Description>"Scenario Flag / SP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>FFX.exe+8494A0</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1195</ID>
+      <Description>"Map ID"</Description>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>22</ID>
+          <Description>"Game state: Map ID (actual)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>FFX.exe+D2CA90</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>31</ID>
+          <Description>"Game state: Map ID (previous)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>FFX.exe+D2CA92</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>26</ID>
+          <Description>"Game state: Map ID (???)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>FFX.exe+F30804</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>162</ID>
+      <Description>"Game state"</Description>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>160</ID>
+      <Description>"Battle"</Description>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1285</ID>
+          <Description>"What is this?"</Description>
+          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1283</ID>
+              <Description>"Pointer to what?"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>FFX.exe+D2A9C8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1284</ID>
+              <Description>"Pointer to what?"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Array of byte</VariableType>
+              <ByteLength>2048</ByteLength>
+              <Address>FFX.exe+D2A9C8</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1280</ID>
+              <Description>"Index of present location in enc. table"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D2C256</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1282</ID>
+              <Description>"Len. of encounter table"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D2A9D0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1623</ID>
+          <Description>"Debug"</Description>
+          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1624</ID>
+              <Description>"CTB Pause"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8E1</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1625</ID>
+              <Description>""Auto Execute""</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8F5</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1627</ID>
+              <Description>"ENEMY_INVINCIBLE"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8F8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1626</ID>
+              <Description>"PLAYER_INVINCIBLE"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8F9</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1633</ID>
+              <Description>"NO_SUMMON_EFFECTS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8FA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1628</ID>
+              <Description>"CTB "Same Order""</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8FB</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1629</ID>
+              <Description>""Mouse" Camera"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8FC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1632</ID>
+              <Description>"NO_MAGIC_EFFECTS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A900</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1631</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A901</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1630</ID>
+              <Description>"Magic ID is always 0"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A902</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1595</ID>
+              <Description>"NO_STATUS_EFFECTS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A904</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1594</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A905</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1593</ID>
+              <Description>"No Overkill (?)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A906</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1592</ID>
+              <Description>"DEATHBLOW_ALWAYS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A907</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1591</ID>
+              <Description>"DETERMINISTIC_DAMAGE"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A908</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1590</ID>
+              <Description>"CRITICAL_NEVER"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A909</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1589</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A90A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1588</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A90B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1587</ID>
+              <Description>"OVERDRIVE_ALWAYS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A90C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1605</ID>
+              <Description>"CRITICAL_ALWAYS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A90D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1635</ID>
+              <Description>"DAMAGE_ALWAYS_1"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A90E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1636</ID>
+              <Description>"DAMAGE_ALWAYS_9999"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A90F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1637</ID>
+              <Description>"DAMAGE_ALWAYS_99999 (?)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A910</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1638</ID>
+              <Description>"???"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A911</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1639</ID>
+              <Description>"AP_TIMES_100"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A912</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1640</ID>
+              <Description>"GIL_TIMES_100"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A913</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1641</ID>
+              <Description>"???"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A914</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1642</ID>
+              <Description>"???"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A915</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1614</ID>
+              <Description>"OVERDRIVE_NEVER"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A916</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1613</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A917</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1612</ID>
+              <Description>"ENEMY_CONTROL"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A918</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1611</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A919</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1610</ID>
+              <Description>""Every Look""</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1609</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1608</ID>
+              <Description>""Skip Command""</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1607</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1606</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1618</ID>
+              <Description>"MISS_ALWAYS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1617</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A920</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1616</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A921</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1615</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A922</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1621</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A923</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1620</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A924</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1619</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A925</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1634</ID>
+              <Description>"Battle ?!"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A926</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1646</ID>
+      <Description>"Assembly emulation registers"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>10</ID>
+          <Description>"asmreg_0"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+88F508</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1647</ID>
+          <Description>"asmreg_vf4"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>FFX.exe+88F7D0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1648</ID>
+          <Description>"asmreg_vf5"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>FFX.exe+88F7E0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>9</ID>
+          <Description>"asmreg_vf6"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>FFX.exe+88F7F0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1649</ID>
+          <Description>"asmreg_vi16"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+88FAC4</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>157</ID>
+      <Description>"Items"</Description>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>793</ID>
+          <Description>"Inventory: Item IDs"</Description>
+          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>149</ID>
+              <Description>"Items: Slot 0 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3095C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>150</ID>
+              <Description>"Items: Slot 1 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3095E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>151</ID>
+              <Description>"Items: Slot 2 - Item ID"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30960</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>152</ID>
+              <Description>"Items: Slot 3 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30962</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>153</ID>
+              <Description>"Items: Slot 4 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30964</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>154</ID>
+              <Description>"Items: Slot 5 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30966</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>155</ID>
+              <Description>"Items: Slot 6 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30968</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>163</ID>
+              <Description>"Items: Slot 7 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3096A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>164</ID>
+              <Description>"Items: Slot 8 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3096C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>165</ID>
+              <Description>"Items: Slot 9 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3096E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>166</ID>
+              <Description>"Items: Slot 10 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30970</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>168</ID>
+              <Description>"Items: Slot 11 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30972</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>169</ID>
+              <Description>"Items: Slot 12 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30974</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>170</ID>
+              <Description>"Items: Slot 13 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30976</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>171</ID>
+              <Description>"Items: Slot 14 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30978</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>172</ID>
+              <Description>"Items: Slot 15 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3097A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>173</ID>
+              <Description>"Items: Slot 16 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3097C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>174</ID>
+              <Description>"Items: Slot 17 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3097E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>175</ID>
+              <Description>"Items: Slot 18 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30980</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>176</ID>
+              <Description>"Items: Slot 19 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30982</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>177</ID>
+              <Description>"Items: Slot 20 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30984</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>178</ID>
+              <Description>"Items: Slot 21 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30986</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>179</ID>
+              <Description>"Items: Slot 22 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30988</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>180</ID>
+              <Description>"Items: Slot 23 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3098A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>181</ID>
+              <Description>"Items: Slot 24 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3098C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>182</ID>
+              <Description>"Items: Slot 25 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3098E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>183</ID>
+              <Description>"Items: Slot 26 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30990</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>184</ID>
+              <Description>"Items: Slot 27 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30992</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>185</ID>
+              <Description>"Items: Slot 28 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30994</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>186</ID>
+              <Description>"Items: Slot 29 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30996</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>187</ID>
+              <Description>"Items: Slot 30 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30998</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>188</ID>
+              <Description>"Items: Slot 31 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3099A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>189</ID>
+              <Description>"Items: Slot 32 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3099C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>190</ID>
+              <Description>"Items: Slot 33 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3099E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>191</ID>
+              <Description>"Items: Slot 34 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309A0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>192</ID>
+              <Description>"Items: Slot 35 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309A2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>193</ID>
+              <Description>"Items: Slot 36 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309A4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>194</ID>
+              <Description>"Items: Slot 37 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309A6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>195</ID>
+              <Description>"Items: Slot 38 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309A8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>196</ID>
+              <Description>"Items: Slot 39 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309AA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>197</ID>
+              <Description>"Items: Slot 40 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309AC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>198</ID>
+              <Description>"Items: Slot 41 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309AE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>199</ID>
+              <Description>"Items: Slot 42 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309B0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>200</ID>
+              <Description>"Items: Slot 43 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309B2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>201</ID>
+              <Description>"Items: Slot 44 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309B4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>270</ID>
+              <Description>"Items: Slot 45 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309B6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>271</ID>
+              <Description>"Items: Slot 46 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309B8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>272</ID>
+              <Description>"Items: Slot 47 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309BA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>273</ID>
+              <Description>"Items: Slot 48 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309BC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>274</ID>
+              <Description>"Items: Slot 49 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309BE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>202</ID>
+              <Description>"Items: Slot 50 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309C0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>203</ID>
+              <Description>"Items: Slot 51 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309C2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>204</ID>
+              <Description>"Items: Slot 52 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309C4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>205</ID>
+              <Description>"Items: Slot 53 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309C6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>206</ID>
+              <Description>"Items: Slot 54 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309C8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>207</ID>
+              <Description>"Items: Slot 55 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309CA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>208</ID>
+              <Description>"Items: Slot 56 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309CC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>209</ID>
+              <Description>"Items: Slot 57 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309CE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>210</ID>
+              <Description>"Items: Slot 58 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309D0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>211</ID>
+              <Description>"Items: Slot 59 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309D2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>212</ID>
+              <Description>"Items: Slot 60 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309D4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>213</ID>
+              <Description>"Items: Slot 61 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309D6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>214</ID>
+              <Description>"Items: Slot 62 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309D8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>215</ID>
+              <Description>"Items: Slot 63 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309DA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>216</ID>
+              <Description>"Items: Slot 64 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309DC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>217</ID>
+              <Description>"Items: Slot 65 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309DE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>218</ID>
+              <Description>"Items: Slot 66 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309E0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>219</ID>
+              <Description>"Items: Slot 67 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309E2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>220</ID>
+              <Description>"Items: Slot 68 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309E4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>221</ID>
+              <Description>"Items: Slot 69 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309E6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>222</ID>
+              <Description>"Items: Slot 70 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309E8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>223</ID>
+              <Description>"Items: Slot 71 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309EA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>224</ID>
+              <Description>"Items: Slot 72 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309EC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>225</ID>
+              <Description>"Items: Slot 73 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309EE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>226</ID>
+              <Description>"Items: Slot 74 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309F0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>227</ID>
+              <Description>"Items: Slot 75 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309F2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>228</ID>
+              <Description>"Items: Slot 76 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309F4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>229</ID>
+              <Description>"Items: Slot 77 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309F6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>230</ID>
+              <Description>"Items: Slot 78 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309F8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>231</ID>
+              <Description>"Items: Slot 79 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309FA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>232</ID>
+              <Description>"Items: Slot 80 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309FC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>233</ID>
+              <Description>"Items: Slot 81 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D309FE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>240</ID>
+              <Description>"Items: Slot 82 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A00</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>241</ID>
+              <Description>"Items: Slot 83 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A02</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>242</ID>
+              <Description>"Items: Slot 84 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A04</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>243</ID>
+              <Description>"Items: Slot 85 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A06</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>244</ID>
+              <Description>"Items: Slot 86 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A08</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>245</ID>
+              <Description>"Items: Slot 87 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A0A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>246</ID>
+              <Description>"Items: Slot 88 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A0C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>247</ID>
+              <Description>"Items: Slot 89 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A0E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>248</ID>
+              <Description>"Items: Slot 90 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A10</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>249</ID>
+              <Description>"Items: Slot 91 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A12</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>250</ID>
+              <Description>"Items: Slot 92 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A14</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>251</ID>
+              <Description>"Items: Slot 93 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A16</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>252</ID>
+              <Description>"Items: Slot 94 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A18</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>253</ID>
+              <Description>"Items: Slot 95 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A1A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>254</ID>
+              <Description>"Items: Slot 96 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A1C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>255</ID>
+              <Description>"Items: Slot 97 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A1E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>256</ID>
+              <Description>"Items: Slot 98 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A20</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>257</ID>
+              <Description>"Items: Slot 99 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A22</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>258</ID>
+              <Description>"Items: Slot 100 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A24</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>259</ID>
+              <Description>"Items: Slot 101 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A26</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>260</ID>
+              <Description>"Items: Slot 102 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A28</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>261</ID>
+              <Description>"Items: Slot 103 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A2A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>262</ID>
+              <Description>"Items: Slot 104 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A2C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>263</ID>
+              <Description>"Items: Slot 105 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A2E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>264</ID>
+              <Description>"Items: Slot 106 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A30</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>265</ID>
+              <Description>"Items: Slot 107 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A32</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>266</ID>
+              <Description>"Items: Slot 108 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A34</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>267</ID>
+              <Description>"Items: Slot 109 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A36</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>268</ID>
+              <Description>"Items: Slot 110 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A38</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>269</ID>
+              <Description>"Items: Slot 111 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A3A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>167</ID>
+              <Description>"Items: Slot 112 - Item ID"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30A3C</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1022</ID>
+          <Description>"Inventory: Item IDs (Alternate)"</Description>
+          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>909</ID>
+              <Description>"Items: Slot 0 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3081C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>910</ID>
+              <Description>"Items: Slot 1 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3081E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>911</ID>
+              <Description>"Items: Slot 2 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30820</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>912</ID>
+              <Description>"Items: Slot 3 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30822</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>913</ID>
+              <Description>"Items: Slot 4 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30824</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>914</ID>
+              <Description>"Items: Slot 5 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30826</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>915</ID>
+              <Description>"Items: Slot 6 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30828</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>916</ID>
+              <Description>"Items: Slot 7 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3082A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>917</ID>
+              <Description>"Items: Slot 8 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3082C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>918</ID>
+              <Description>"Items: Slot 9 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3082E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>919</ID>
+              <Description>"Items: Slot 10 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30830</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>920</ID>
+              <Description>"Items: Slot 11 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30832</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>921</ID>
+              <Description>"Items: Slot 12 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30834</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>922</ID>
+              <Description>"Items: Slot 13 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30836</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>923</ID>
+              <Description>"Items: Slot 14 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30838</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>924</ID>
+              <Description>"Items: Slot 15 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3083A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>925</ID>
+              <Description>"Items: Slot 16 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3083C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>926</ID>
+              <Description>"Items: Slot 17 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3083E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>927</ID>
+              <Description>"Items: Slot 18 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30840</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>928</ID>
+              <Description>"Items: Slot 19 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30842</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>929</ID>
+              <Description>"Items: Slot 20 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30844</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>930</ID>
+              <Description>"Items: Slot 21 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30846</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>931</ID>
+              <Description>"Items: Slot 22 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30848</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>932</ID>
+              <Description>"Items: Slot 23 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3084A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>933</ID>
+              <Description>"Items: Slot 24 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3084C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>934</ID>
+              <Description>"Items: Slot 25 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3084E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>935</ID>
+              <Description>"Items: Slot 26 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30850</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>936</ID>
+              <Description>"Items: Slot 27 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30852</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>937</ID>
+              <Description>"Items: Slot 28 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30854</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>938</ID>
+              <Description>"Items: Slot 29 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30856</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>939</ID>
+              <Description>"Items: Slot 30 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30858</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>940</ID>
+              <Description>"Items: Slot 31 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3085A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>941</ID>
+              <Description>"Items: Slot 32 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3085C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>942</ID>
+              <Description>"Items: Slot 33 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3085E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>943</ID>
+              <Description>"Items: Slot 34 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30860</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>944</ID>
+              <Description>"Items: Slot 35 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30862</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>945</ID>
+              <Description>"Items: Slot 36 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30864</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>946</ID>
+              <Description>"Items: Slot 37 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30866</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>947</ID>
+              <Description>"Items: Slot 38 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30868</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>948</ID>
+              <Description>"Items: Slot 39 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3086A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>949</ID>
+              <Description>"Items: Slot 40 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3086C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>950</ID>
+              <Description>"Items: Slot 41 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3086E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>951</ID>
+              <Description>"Items: Slot 42 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30870</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>952</ID>
+              <Description>"Items: Slot 43 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30872</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>953</ID>
+              <Description>"Items: Slot 44 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30874</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>954</ID>
+              <Description>"Items: Slot 45 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30876</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>955</ID>
+              <Description>"Items: Slot 46 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30878</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>956</ID>
+              <Description>"Items: Slot 47 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3087A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>957</ID>
+              <Description>"Items: Slot 48 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3087C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>958</ID>
+              <Description>"Items: Slot 49 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3087E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>959</ID>
+              <Description>"Items: Slot 50 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30880</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>960</ID>
+              <Description>"Items: Slot 51 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30882</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>961</ID>
+              <Description>"Items: Slot 52 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30884</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>962</ID>
+              <Description>"Items: Slot 53 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30886</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>963</ID>
+              <Description>"Items: Slot 54 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30888</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>964</ID>
+              <Description>"Items: Slot 55 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3088A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>965</ID>
+              <Description>"Items: Slot 56 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3088C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>966</ID>
+              <Description>"Items: Slot 57 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3088E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>967</ID>
+              <Description>"Items: Slot 58 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30890</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>968</ID>
+              <Description>"Items: Slot 59 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30892</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>969</ID>
+              <Description>"Items: Slot 60 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30894</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>970</ID>
+              <Description>"Items: Slot 61 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30896</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>971</ID>
+              <Description>"Items: Slot 62 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D30898</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>972</ID>
+              <Description>"Items: Slot 63 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3089A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>973</ID>
+              <Description>"Items: Slot 64 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3089C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>974</ID>
+              <Description>"Items: Slot 65 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D3089E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>975</ID>
+              <Description>"Items: Slot 66 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308A0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>976</ID>
+              <Description>"Items: Slot 67 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308A2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>977</ID>
+              <Description>"Items: Slot 68 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308A4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>978</ID>
+              <Description>"Items: Slot 69 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308A6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>979</ID>
+              <Description>"Items: Slot 70 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308A8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>980</ID>
+              <Description>"Items: Slot 71 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308AA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>981</ID>
+              <Description>"Items: Slot 72 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308AC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>982</ID>
+              <Description>"Items: Slot 73 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308AE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>983</ID>
+              <Description>"Items: Slot 74 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308B0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>984</ID>
+              <Description>"Items: Slot 75 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308B2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>985</ID>
+              <Description>"Items: Slot 76 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308B4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>986</ID>
+              <Description>"Items: Slot 77 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308B6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>987</ID>
+              <Description>"Items: Slot 78 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308B8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>988</ID>
+              <Description>"Items: Slot 79 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308BA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>989</ID>
+              <Description>"Items: Slot 80 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308BC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>990</ID>
+              <Description>"Items: Slot 81 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308BE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>991</ID>
+              <Description>"Items: Slot 82 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308C0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>992</ID>
+              <Description>"Items: Slot 83 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308C2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>993</ID>
+              <Description>"Items: Slot 84 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308C4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>994</ID>
+              <Description>"Items: Slot 85 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308C6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>995</ID>
+              <Description>"Items: Slot 86 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308C8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>996</ID>
+              <Description>"Items: Slot 87 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308CA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>997</ID>
+              <Description>"Items: Slot 88 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308CC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>998</ID>
+              <Description>"Items: Slot 89 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308CE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>999</ID>
+              <Description>"Items: Slot 90 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308D0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1000</ID>
+              <Description>"Items: Slot 91 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308D2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1001</ID>
+              <Description>"Items: Slot 92 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308D4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1002</ID>
+              <Description>"Items: Slot 93 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308D6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1003</ID>
+              <Description>"Items: Slot 94 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308D8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1004</ID>
+              <Description>"Items: Slot 95 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308DA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1005</ID>
+              <Description>"Items: Slot 96 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308DC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1006</ID>
+              <Description>"Items: Slot 97 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308DE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1007</ID>
+              <Description>"Items: Slot 98 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308E0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1008</ID>
+              <Description>"Items: Slot 99 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308E2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1009</ID>
+              <Description>"Items: Slot 100 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308E4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1010</ID>
+              <Description>"Items: Slot 101 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308E6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1011</ID>
+              <Description>"Items: Slot 102 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308E8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1012</ID>
+              <Description>"Items: Slot 103 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308EA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1013</ID>
+              <Description>"Items: Slot 104 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308EC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1014</ID>
+              <Description>"Items: Slot 105 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308EE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1015</ID>
+              <Description>"Items: Slot 106 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308F0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1016</ID>
+              <Description>"Items: Slot 107 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308F2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1017</ID>
+              <Description>"Items: Slot 108 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308F4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1018</ID>
+              <Description>"Items: Slot 109 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308F6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1019</ID>
+              <Description>"Items: Slot 110 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308F8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1020</ID>
+              <Description>"Items: Slot 111 - Item ID"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308FA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1021</ID>
+              <Description>"Items: Slot 112 - Item ID"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>FFX.exe+D308FC</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>794</ID>
+          <Description>"Inventory: Stock"</Description>
+          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>156</ID>
+              <Description>"Items: Slot 0 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B5C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>139</ID>
+              <Description>"Items: Slot 1 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B5D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>140</ID>
+              <Description>"Items: Slot 2 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B5E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>141</ID>
+              <Description>"Items: Slot 3 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B5F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>142</ID>
+              <Description>"Items: Slot 4 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B60</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>143</ID>
+              <Description>"Items: Slot 5 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B61</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>144</ID>
+              <Description>"Items: Slot 6 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B62</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>145</ID>
+              <Description>"Items: Slot 7 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B63</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>146</ID>
+              <Description>"Items: Slot 8 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B64</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>148</ID>
+              <Description>"Items: Slot 9 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B65</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>138</ID>
+              <Description>"Items: Slot 10 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B66</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>514</ID>
+              <Description>"Items: Slot 11 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B67</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>515</ID>
+              <Description>"Items: Slot 12 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B68</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>516</ID>
+              <Description>"Items: Slot 13 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B69</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>517</ID>
+              <Description>"Items: Slot 14 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B6A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>518</ID>
+              <Description>"Items: Slot 15 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B6B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>519</ID>
+              <Description>"Items: Slot 16 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B6C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>520</ID>
+              <Description>"Items: Slot 17 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B6D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>521</ID>
+              <Description>"Items: Slot 18 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B6E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>522</ID>
+              <Description>"Items: Slot 19 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B6F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>523</ID>
+              <Description>"Items: Slot 20 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B70</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>524</ID>
+              <Description>"Items: Slot 21 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B71</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>525</ID>
+              <Description>"Items: Slot 22 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B72</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>526</ID>
+              <Description>"Items: Slot 23 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B73</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>527</ID>
+              <Description>"Items: Slot 24 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B74</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>528</ID>
+              <Description>"Items: Slot 25 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B75</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>529</ID>
+              <Description>"Items: Slot 26 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B76</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>275</ID>
+              <Description>"Items: Slot 27 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B77</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>276</ID>
+              <Description>"Items: Slot 28 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B78</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>277</ID>
+              <Description>"Items: Slot 29 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B79</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>278</ID>
+              <Description>"Items: Slot 30 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B7A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>279</ID>
+              <Description>"Items: Slot 31 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B7B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>280</ID>
+              <Description>"Items: Slot 32 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B7C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>281</ID>
+              <Description>"Items: Slot 33 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B7D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>282</ID>
+              <Description>"Items: Slot 34 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B7E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>283</ID>
+              <Description>"Items: Slot 35 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B7F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>284</ID>
+              <Description>"Items: Slot 36 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B80</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>285</ID>
+              <Description>"Items: Slot 37 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B81</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>286</ID>
+              <Description>"Items: Slot 38 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B82</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>287</ID>
+              <Description>"Items: Slot 39 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B83</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>288</ID>
+              <Description>"Items: Slot 40 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B84</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>289</ID>
+              <Description>"Items: Slot 41 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B85</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>290</ID>
+              <Description>"Items: Slot 42 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B86</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>291</ID>
+              <Description>"Items: Slot 43 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B87</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>292</ID>
+              <Description>"Items: Slot 44 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B88</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>293</ID>
+              <Description>"Items: Slot 45 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B89</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>294</ID>
+              <Description>"Items: Slot 46 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B8A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>295</ID>
+              <Description>"Items: Slot 47 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B8B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>296</ID>
+              <Description>"Items: Slot 48 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B8C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>297</ID>
+              <Description>"Items: Slot 49 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B8D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>298</ID>
+              <Description>"Items: Slot 50 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B8E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>299</ID>
+              <Description>"Items: Slot 51 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B8F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>300</ID>
+              <Description>"Items: Slot 52 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B90</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>301</ID>
+              <Description>"Items: Slot 53 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B91</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>302</ID>
+              <Description>"Items: Slot 54 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B92</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>303</ID>
+              <Description>"Items: Slot 55 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B93</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>304</ID>
+              <Description>"Items: Slot 56 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B94</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>305</ID>
+              <Description>"Items: Slot 57 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B95</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>306</ID>
+              <Description>"Items: Slot 58 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B96</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>307</ID>
+              <Description>"Items: Slot 59 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B97</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>308</ID>
+              <Description>"Items: Slot 60 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B98</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>309</ID>
+              <Description>"Items: Slot 61 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B99</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>310</ID>
+              <Description>"Items: Slot 62 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B9A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>311</ID>
+              <Description>"Items: Slot 63 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B9B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>312</ID>
+              <Description>"Items: Slot 64 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B9C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>313</ID>
+              <Description>"Items: Slot 65 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B9D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>314</ID>
+              <Description>"Items: Slot 66 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B9E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>315</ID>
+              <Description>"Items: Slot 67 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30B9F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>316</ID>
+              <Description>"Items: Slot 68 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BA0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>317</ID>
+              <Description>"Items: Slot 69 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BA1</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>318</ID>
+              <Description>"Items: Slot 70 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BA2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>319</ID>
+              <Description>"Items: Slot 71 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BA3</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>320</ID>
+              <Description>"Items: Slot 72 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BA4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>321</ID>
+              <Description>"Items: Slot 73 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BA5</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>322</ID>
+              <Description>"Items: Slot 74 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BA6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>323</ID>
+              <Description>"Items: Slot 75 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BA7</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>324</ID>
+              <Description>"Items: Slot 76 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BA8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>325</ID>
+              <Description>"Items: Slot 77 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BA9</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>326</ID>
+              <Description>"Items: Slot 78 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BAA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>327</ID>
+              <Description>"Items: Slot 79 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BAB</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>328</ID>
+              <Description>"Items: Slot 80 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BAC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>329</ID>
+              <Description>"Items: Slot 81 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BAD</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>330</ID>
+              <Description>"Items: Slot 82 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BAE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>331</ID>
+              <Description>"Items: Slot 83 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BAF</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>332</ID>
+              <Description>"Items: Slot 84 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BB0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>333</ID>
+              <Description>"Items: Slot 85 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BB1</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>334</ID>
+              <Description>"Items: Slot 86 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BB2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>335</ID>
+              <Description>"Items: Slot 87 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BB3</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>336</ID>
+              <Description>"Items: Slot 88 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BB4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>337</ID>
+              <Description>"Items: Slot 89 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BB5</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>338</ID>
+              <Description>"Items: Slot 90 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BB6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>339</ID>
+              <Description>"Items: Slot 91 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BB7</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>340</ID>
+              <Description>"Items: Slot 92 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BB8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>341</ID>
+              <Description>"Items: Slot 93 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BB9</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>342</ID>
+              <Description>"Items: Slot 94 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BBA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>343</ID>
+              <Description>"Items: Slot 95 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BBB</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>344</ID>
+              <Description>"Items: Slot 96 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BBC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>345</ID>
+              <Description>"Items: Slot 97 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BBD</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>346</ID>
+              <Description>"Items: Slot 98 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BBE</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>347</ID>
+              <Description>"Items: Slot 99 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BBF</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>348</ID>
+              <Description>"Items: Slot 100 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BC0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>349</ID>
+              <Description>"Items: Slot 101 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BC1</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>350</ID>
+              <Description>"Items: Slot 102 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BC2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>351</ID>
+              <Description>"Items: Slot 103 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BC3</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>352</ID>
+              <Description>"Items: Slot 104 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BC4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>353</ID>
+              <Description>"Items: Slot 105 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BC5</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>354</ID>
+              <Description>"Items: Slot 106 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BC6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>355</ID>
+              <Description>"Items: Slot 107 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BC7</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356</ID>
+              <Description>"Items: Slot 108 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BC8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>357</ID>
+              <Description>"Items: Slot 109 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BC9</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>358</ID>
+              <Description>"Items: Slot 110 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BCA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>359</ID>
+              <Description>"Items: Slot 111 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BCB</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>147</ID>
+              <Description>"Items: Slot 112 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30BCC</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>908</ID>
+          <Description>"Inventory: Stock (Alternate)"</Description>
+          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>795</ID>
+              <Description>"Items: Slot 0 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3082C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>796</ID>
+              <Description>"Items: Slot 1 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3082D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>797</ID>
+              <Description>"Items: Slot 2 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3082E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>798</ID>
+              <Description>"Items: Slot 3 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3082F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>799</ID>
+              <Description>"Items: Slot 4 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30830</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>800</ID>
+              <Description>"Items: Slot 5 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30831</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>801</ID>
+              <Description>"Items: Slot 6 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30832</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>802</ID>
+              <Description>"Items: Slot 7 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30833</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>803</ID>
+              <Description>"Items: Slot 8 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30834</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>804</ID>
+              <Description>"Items: Slot 9 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30835</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>805</ID>
+              <Description>"Items: Slot 10 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30836</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>806</ID>
+              <Description>"Items: Slot 11 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30837</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>807</ID>
+              <Description>"Items: Slot 12 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30838</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>808</ID>
+              <Description>"Items: Slot 13 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30839</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>809</ID>
+              <Description>"Items: Slot 14 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3083A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>810</ID>
+              <Description>"Items: Slot 15 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3083B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>811</ID>
+              <Description>"Items: Slot 16 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3083C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>812</ID>
+              <Description>"Items: Slot 17 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3083D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>813</ID>
+              <Description>"Items: Slot 18 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3083E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>814</ID>
+              <Description>"Items: Slot 19 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3083F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>815</ID>
+              <Description>"Items: Slot 20 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30840</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>816</ID>
+              <Description>"Items: Slot 21 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30841</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>817</ID>
+              <Description>"Items: Slot 22 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30842</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>818</ID>
+              <Description>"Items: Slot 23 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30843</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>819</ID>
+              <Description>"Items: Slot 24 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30844</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>820</ID>
+              <Description>"Items: Slot 25 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30845</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>821</ID>
+              <Description>"Items: Slot 26 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30846</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>822</ID>
+              <Description>"Items: Slot 27 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30847</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>823</ID>
+              <Description>"Items: Slot 28 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30848</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>824</ID>
+              <Description>"Items: Slot 29 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30849</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>825</ID>
+              <Description>"Items: Slot 30 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3084A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>826</ID>
+              <Description>"Items: Slot 31 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3084B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>827</ID>
+              <Description>"Items: Slot 32 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3084C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>828</ID>
+              <Description>"Items: Slot 33 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3084D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>829</ID>
+              <Description>"Items: Slot 34 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3084E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>830</ID>
+              <Description>"Items: Slot 35 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3084F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>831</ID>
+              <Description>"Items: Slot 36 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30850</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>832</ID>
+              <Description>"Items: Slot 37 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30851</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>833</ID>
+              <Description>"Items: Slot 38 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30852</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>834</ID>
+              <Description>"Items: Slot 39 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30853</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>835</ID>
+              <Description>"Items: Slot 40 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30854</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>836</ID>
+              <Description>"Items: Slot 41 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30855</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>837</ID>
+              <Description>"Items: Slot 42 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30856</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>838</ID>
+              <Description>"Items: Slot 43 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30857</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>839</ID>
+              <Description>"Items: Slot 44 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30858</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>840</ID>
+              <Description>"Items: Slot 45 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30859</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>841</ID>
+              <Description>"Items: Slot 46 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3085A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>842</ID>
+              <Description>"Items: Slot 47 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3085B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>843</ID>
+              <Description>"Items: Slot 48 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3085C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>844</ID>
+              <Description>"Items: Slot 49 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3085D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>845</ID>
+              <Description>"Items: Slot 50 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3085E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>846</ID>
+              <Description>"Items: Slot 51 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3085F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>847</ID>
+              <Description>"Items: Slot 52 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30860</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>848</ID>
+              <Description>"Items: Slot 53 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30861</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>849</ID>
+              <Description>"Items: Slot 54 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30862</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>850</ID>
+              <Description>"Items: Slot 55 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30863</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>851</ID>
+              <Description>"Items: Slot 56 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30864</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>852</ID>
+              <Description>"Items: Slot 57 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30865</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>853</ID>
+              <Description>"Items: Slot 58 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30866</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>854</ID>
+              <Description>"Items: Slot 59 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30867</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>855</ID>
+              <Description>"Items: Slot 60 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30868</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>856</ID>
+              <Description>"Items: Slot 61 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30869</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>857</ID>
+              <Description>"Items: Slot 62 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3086A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>858</ID>
+              <Description>"Items: Slot 63 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3086B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>859</ID>
+              <Description>"Items: Slot 64 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3086C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>860</ID>
+              <Description>"Items: Slot 65 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3086D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>861</ID>
+              <Description>"Items: Slot 66 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3086E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>862</ID>
+              <Description>"Items: Slot 67 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3086F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>863</ID>
+              <Description>"Items: Slot 68 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30870</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>864</ID>
+              <Description>"Items: Slot 69 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30871</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>865</ID>
+              <Description>"Items: Slot 70 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30872</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>866</ID>
+              <Description>"Items: Slot 71 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30873</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>867</ID>
+              <Description>"Items: Slot 72 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30874</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>868</ID>
+              <Description>"Items: Slot 73 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30875</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>869</ID>
+              <Description>"Items: Slot 74 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30876</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>870</ID>
+              <Description>"Items: Slot 75 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30877</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>871</ID>
+              <Description>"Items: Slot 76 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30878</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>872</ID>
+              <Description>"Items: Slot 77 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30879</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>873</ID>
+              <Description>"Items: Slot 78 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3087A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>874</ID>
+              <Description>"Items: Slot 79 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3087B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>875</ID>
+              <Description>"Items: Slot 80 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3087C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>876</ID>
+              <Description>"Items: Slot 81 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3087D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>877</ID>
+              <Description>"Items: Slot 82 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3087E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>878</ID>
+              <Description>"Items: Slot 83 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3087F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>879</ID>
+              <Description>"Items: Slot 84 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30880</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>880</ID>
+              <Description>"Items: Slot 85 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30881</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>881</ID>
+              <Description>"Items: Slot 86 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30882</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>882</ID>
+              <Description>"Items: Slot 87 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30883</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>883</ID>
+              <Description>"Items: Slot 88 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30884</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>884</ID>
+              <Description>"Items: Slot 89 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30885</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>885</ID>
+              <Description>"Items: Slot 90 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30886</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>886</ID>
+              <Description>"Items: Slot 91 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30887</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>887</ID>
+              <Description>"Items: Slot 92 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30888</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>888</ID>
+              <Description>"Items: Slot 93 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30889</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>889</ID>
+              <Description>"Items: Slot 94 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3088A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>890</ID>
+              <Description>"Items: Slot 95 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3088B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>891</ID>
+              <Description>"Items: Slot 96 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3088C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>892</ID>
+              <Description>"Items: Slot 97 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3088D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>893</ID>
+              <Description>"Items: Slot 98 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3088E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>894</ID>
+              <Description>"Items: Slot 99 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3088F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>895</ID>
+              <Description>"Items: Slot 100 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30890</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>896</ID>
+              <Description>"Items: Slot 101 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30891</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>897</ID>
+              <Description>"Items: Slot 102 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30892</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>898</ID>
+              <Description>"Items: Slot 103 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30893</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>899</ID>
+              <Description>"Items: Slot 104 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30894</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>900</ID>
+              <Description>"Items: Slot 105 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30895</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>901</ID>
+              <Description>"Items: Slot 106 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30896</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>902</ID>
+              <Description>"Items: Slot 107 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30897</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>903</ID>
+              <Description>"Items: Slot 108 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30898</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>904</ID>
+              <Description>"Items: Slot 109 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D30899</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>905</ID>
+              <Description>"Items: Slot 110 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3089A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>906</ID>
+              <Description>"Items: Slot 111 - Stock"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3089B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>907</ID>
+              <Description>"Items: Slot 112 - Stock"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D3089C</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1651</ID>
+      <Description>"Localization Manager"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>FFX.exe+8DED48</Address>
+      <Offsets>
+        <Offset>0</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1652</ID>
+          <Description>"Current language ID"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1271</ID>
+      <Description>"Boosters"</Description>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1267</ID>
+          <Description>"Encounter rate (0 = off, 1 = normal, 2 = more)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+8421C8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1268</ID>
+          <Description>"Supercharge"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+EFB78C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1269</ID>
+          <Description>"Turbo (0 = none, 1 = 2x, 2 = 4x)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+8E82A4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1270</ID>
+          <Description>"Auto-battle"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F3D6A0</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1711</ID>
+      <Description>"File accesses"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>FFX.exe+1EFB6C0</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1712</ID>
+          <Description>"[0]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1713</ID>
+          <Description>"[1]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+80</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1714</ID>
+          <Description>"[2]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+100</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1715</ID>
+          <Description>"[3]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+180</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1716</ID>
+          <Description>"[4]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+200</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1717</ID>
+          <Description>"[5]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+280</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1718</ID>
+          <Description>"[6]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+300</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1719</ID>
+          <Description>"[7]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+380</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1720</ID>
+          <Description>"[8]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+400</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1721</ID>
+          <Description>"[9]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+480</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1722</ID>
+          <Description>"[10]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+500</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1723</ID>
+          <Description>"[11]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+580</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1724</ID>
+          <Description>"[12]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+600</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1725</ID>
+          <Description>"[13]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+680</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1726</ID>
+          <Description>"[14]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+700</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1727</ID>
+          <Description>"[15]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+780</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1728</ID>
+          <Description>"[16]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+800</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1729</ID>
+          <Description>"[17]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+880</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1730</ID>
+          <Description>"[18]"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>128</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+900</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1664</ID>
+      <Description>"Global variables"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1693</ID>
+          <Description>"AtelEventName"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>256</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>FFX.exe+1FCBC60</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1701</ID>
+          <Description>"atelbinhdrbuf (PTR?)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+1FCBD70</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1710</ID>
+          <Description>"atelactorbuf (PTR?)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+1FCBD78</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1700</ID>
+          <Description>"font_scale_jimaku"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+85D784</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1681</ID>
+          <Description>"save_ram (???!?!??!!?)"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>FFX.exe+D2CA90</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1682</ID>
+              <Description>"WaterBattleEffect (???????????????????)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+D7</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1692</ID>
+          <Description>"cd_read (FPTR)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+1F10C40</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1694</ID>
+          <Description>"cd_read (FPTR?)"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>FFX.exe+1F10C40</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1695</ID>
+              <Description>"No description"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1696</ID>
+              <Description>"No description"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1697</ID>
+              <Description>"No description"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1698</ID>
+              <Description>"No description"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1699</ID>
+              <Description>"No description"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+10</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1691</ID>
+          <Description>"ffx_langmode"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F307F0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1667</ID>
+          <Description>"g_eventId"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+EFBBF8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1657</ID>
+          <Description>"g_graphicInitialize"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+8CB45C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1662</ID>
+          <Description>"g_clothMemSpace (PTR)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+8CB454</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1661</ID>
+          <Description>"g_clothMemSpace (ROOT)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>FFX.exe+8CB454</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1663</ID>
+          <Description>"g_clothMem (PTR)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+8CB458</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1660</ID>
+          <Description>"g_clothMem (ROOT, ALIGN = 0x10)"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>FFX.exe+8CB458</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1665</ID>
+              <Description>"No description"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Array of byte</VariableType>
+              <ByteLength>16</ByteLength>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1666</ID>
+              <Description>"No description"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Array of byte</VariableType>
+              <ByteLength>16</ByteLength>
+              <Address>+16</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1705</ID>
+          <Description>"g_subtitleException"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F270C0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1704</ID>
+          <Description>"g_is2Dmap"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F270C4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1645</ID>
+          <Description>"ffx_debugmode"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F3C8D0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"ms_debug_chr_select"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+D3F880</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>12</ID>
+          <Description>"ms_camera"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+D37C2C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1703</ID>
+          <Description>"sg_count"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+1FCBBF0</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1731</ID>
+      <Description>"WORK_IN_PROGRESS_PEPPY"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1668</ID>
+          <Description>"AtelSetOverlayStatus (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26B40</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1669</ID>
+          <Description>"AtelRegistAlbhedDic (1) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F25B50</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1670</ID>
+          <Description>"AtelRegistAlbhedDic (2) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F25B54</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1671</ID>
+          <Description>"AtelSetMenuExecStatus (?)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26B42</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1690</ID>
+          <Description>"AtelGetEventMode (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F270DF</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1679</ID>
+          <Description>"AtelInitBattleEndStatus (F26B08 = 0x10001) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26B08</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1672</ID>
+          <Description>"AtelSetEncountBattleEndStatus (1) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26B08</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1674</ID>
+          <Description>"AtelSetEncountBattleEndStatus (2) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26B10</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1675</ID>
+          <Description>"AtelSetEncountBattleEndStatus (3) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26B14</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1676</ID>
+          <Description>"AtelRegistBattleEndMovieFadeout (1) (?)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26B44</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1677</ID>
+          <Description>"AtelRegistBattleEndMovieFadeout (2) (?)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26B48</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1678</ID>
+          <Description>"AtelRegistBattleEndMovieFadeout (3) (?)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26B4C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1683</ID>
+          <Description>"AtelSetForceBattleMapId"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+85273C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1684</ID>
+          <Description>"AtelClearNotAuronPatchFlag"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>FFX.exe+F26B41</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1685</ID>
+          <Description>"AtelClearEffectParam (1) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26CA0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1687</ID>
+          <Description>"AtelClearEffectParam (2) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26CA4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1688</ID>
+          <Description>"AtelClearEffectParam (3) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26CA8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1689</ID>
+          <Description>"AtelClearEffectParam (4) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+F26CAC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1706</ID>
+          <Description>"MsEventEffectInit (1) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+D33360</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1708</ID>
+          <Description>"MsEventEffectInit (2) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+D33364</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1709</ID>
+          <Description>"MsEventEffectInit (3) (?)"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+D3336C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1702</ID>
+          <Description>"Sg_GetFuncName"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>FFX.exe+78FBDB</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>16</ID>
+          <Description>"Phyre::PSerialization::PStreamFile::GetStreamPrefix()"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+8C9698</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

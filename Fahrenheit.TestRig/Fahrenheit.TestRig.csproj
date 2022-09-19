@@ -1,0 +1,38 @@
+<Project>
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<BaseIntermediateOutputPath>..\obj\Fahrenheit.TestRig</BaseIntermediateOutputPath>
+		<BaseOutputPath>..\build\Fahrenheit.TestRig</BaseOutputPath>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<AssemblyName>fhtest</AssemblyName>
+	</PropertyGroup>
+
+	<Target Name="CopyAfterBuild" AfterTargets="Build">
+		<PropertyGroup>
+			<CopyToDir>..\build\fahrenheit</CopyToDir>
+		</PropertyGroup>
+
+		<ItemGroup>
+			<ProjectFiles Include="$(TargetDir)\*.*" />
+		</ItemGroup>
+
+		<Message Text="Copying to $(CopyToDir)" Importance="High" />
+
+		<Copy SourceFiles="@(ProjectFiles)" DestinationFolder="$(CopyToDir)" />
+
+		<Message Text="Copied build files to $(CopyToDir)." Importance="High" />
+	</Target>
+
+	<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+	<ItemGroup>
+	  <ProjectReference Include="..\Fahrenheit.Common\Fahrenheit.Common.csproj" />
+	  <ProjectReference Include="..\Fahrenheit.Core.X2\Fahrenheit.Core.X2.csproj" />
+	  <ProjectReference Include="..\Fahrenheit.Core.X\Fahrenheit.Core.X.csproj" />
+	</ItemGroup>
+
+</Project>

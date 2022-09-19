@@ -25,8 +25,8 @@ public enum FhXBtlPlySave : byte // intuitive guess- might be incorrect
     PC_ANIMA   = 0x0D,
     PC_YOJIMBO = 0x0E,
     PC_MAGUS1  = 0x0F,
-    PC_MAGUS2  = 0x010,
-    PC_MAGUS3  = 0x011,
-    PC_DUMMY   = 0x012,
-    PC_DUMMY2  = 0x013,
+    PC_MAGUS2  = 0x10,
+    PC_MAGUS3  = 0x11,
+    PC_DUMMY   = 0x12,
+    PC_DUMMY2  = 0x13,
 }
