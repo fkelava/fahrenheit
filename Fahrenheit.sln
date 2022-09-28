@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fahrenheit.Core.X", "Fahren
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fahrenheit.Core.X2", "Fahrenheit.Core.X2\Fahrenheit.Core.X2.csproj", "{28041EFD-BAFC-4FD6-B40D-4AB96B13FDAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrenheit.TestRig", "Fahrenheit.TestRig\Fahrenheit.TestRig.csproj", "{07C47D8A-3C70-440A-B64C-A7260A5B7FEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fahrenheit.TestRig", "Fahrenheit.TestRig\Fahrenheit.TestRig.csproj", "{07C47D8A-3C70-440A-B64C-A7260A5B7FEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrenheit.Common", "Fahrenheit.Common\Fahrenheit.Common.csproj", "{12E84C06-78C9-46AF-8817-289A3B0A0DF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fahrenheit.Common", "Fahrenheit.Common\Fahrenheit.Common.csproj", "{12E84C06-78C9-46AF-8817-289A3B0A0DF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fahrenheit.SGen", "Fahrenheit.SGen\Fahrenheit.SGen.csproj", "{1DEFE0D4-519E-4D28-8782-C4D620CD332D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrenheit.DEdit", "Fahrenheit.DEdit\Fahrenheit.DEdit.csproj", "{6B6278E1-B15C-42F1-A435-A1BD26178205}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{12E84C06-78C9-46AF-8817-289A3B0A0DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12E84C06-78C9-46AF-8817-289A3B0A0DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12E84C06-78C9-46AF-8817-289A3B0A0DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DEFE0D4-519E-4D28-8782-C4D620CD332D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DEFE0D4-519E-4D28-8782-C4D620CD332D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DEFE0D4-519E-4D28-8782-C4D620CD332D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DEFE0D4-519E-4D28-8782-C4D620CD332D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B6278E1-B15C-42F1-A435-A1BD26178205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6278E1-B15C-42F1-A435-A1BD26178205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6278E1-B15C-42F1-A435-A1BD26178205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6278E1-B15C-42F1-A435-A1BD26178205}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

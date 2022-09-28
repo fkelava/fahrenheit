@@ -152,325 +152,781 @@
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>1623</ID>
+          <ID>1787</ID>
+          <Description>"BattleConfig"</Description>
+          <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1789</ID>
+              <Description>"CTB pause"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8E1</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1792</ID>
+              <Description>"Auto Execute"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8F5</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1794</ID>
+              <Description>"Mon Invincible"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8F8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1793</ID>
+              <Description>"Ply Invincible"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8F9</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1798</ID>
+              <Description>"Sum Not Eff"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8FA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1790</ID>
+              <Description>"CTB Same Order"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8FB</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1791</ID>
+              <Description>"Mouse Camera"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A8FC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1796</ID>
+              <Description>"Mag Not Eff"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A900</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1797</ID>
+              <Description>"Mag Free"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A901</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1795</ID>
+              <Description>"Mag Num 0"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A902</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1803</ID>
+              <Description>"Dmg Status Off"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A904</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1788</ID>
+              <Description>"FullSet"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A905</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1805</ID>
+              <Description>"LimitBreak On"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A906</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1810</ID>
+              <Description>"Skip Command"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A907</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1799</ID>
+              <Description>"Dmg Random Off"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A908</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1802</ID>
+              <Description>"Dmg Crit Off"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A909</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1800</ID>
+              <Description>"Dmg Prob Off"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A90A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1804</ID>
+              <Description>"Over Kill Off"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A90B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1806</ID>
+              <Description>"LimitBreak Off"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A90C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1801</ID>
+              <Description>"Dmg Crit On"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A90D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1815</ID>
+              <Description>"Test Hit Eff"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A914</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1809</ID>
+              <Description>"Mon Input"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A915</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1807</ID>
+              <Description>"Print Info"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A916</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1814</ID>
+              <Description>"DVD stop mag"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A917</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1811</ID>
+              <Description>"Every Look"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A918</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1813</ID>
+              <Description>"DVD slow start"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1816</ID>
+              <Description>"Map Circle"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1812</ID>
+              <Description>"Exchg WillDie"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1817</ID>
+              <Description>"Ply HP1"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1818</ID>
+              <Description>"Mon HP1"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1865</ID>
+              <Description>"Miss everything"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A91F</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1866</ID>
+              <Description>"Weapon"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A920</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1867</ID>
+              <Description>"Magic Item"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A921</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1808</ID>
+              <Description>"ThrowAway Parm"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A922</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1868</ID>
+              <Description>"Camera Prio"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A924</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1869</ID>
+              <Description>"Camera Local"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A925</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1870</ID>
+              <Description>"Neck Off"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A926</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1871</ID>
+              <Description>"Focus Off"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>FFX.exe+D2A927</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1819</ID>
           <Description>"Debug"</Description>
           <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
-              <ID>1624</ID>
+              <ID>1820</ID>
               <Description>"CTB Pause"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A8E1</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1625</ID>
+              <ID>1821</ID>
               <Description>""Auto Execute""</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A8F5</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1627</ID>
+              <ID>1822</ID>
               <Description>"ENEMY_INVINCIBLE"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A8F8</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1626</ID>
+              <ID>1823</ID>
               <Description>"PLAYER_INVINCIBLE"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A8F9</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1633</ID>
+              <ID>1824</ID>
               <Description>"NO_SUMMON_EFFECTS"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A8FA</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1628</ID>
+              <ID>1825</ID>
               <Description>"CTB "Same Order""</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A8FB</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1629</ID>
+              <ID>1826</ID>
               <Description>""Mouse" Camera"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A8FC</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1632</ID>
+              <ID>1827</ID>
               <Description>"NO_MAGIC_EFFECTS"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A900</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1631</ID>
+              <ID>1828</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A901</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1630</ID>
+              <ID>1829</ID>
               <Description>"Magic ID is always 0"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A902</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1595</ID>
+              <ID>1830</ID>
               <Description>"NO_STATUS_EFFECTS"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A904</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1594</ID>
+              <ID>1831</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A905</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1593</ID>
+              <ID>1832</ID>
               <Description>"No Overkill (?)"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A906</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1592</ID>
+              <ID>1833</ID>
               <Description>"DEATHBLOW_ALWAYS"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A907</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1591</ID>
+              <ID>1834</ID>
               <Description>"DETERMINISTIC_DAMAGE"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A908</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1590</ID>
+              <ID>1835</ID>
               <Description>"CRITICAL_NEVER"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A909</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1589</ID>
+              <ID>1836</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A90A</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1588</ID>
+              <ID>1837</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A90B</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1587</ID>
+              <ID>1838</ID>
               <Description>"OVERDRIVE_ALWAYS"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A90C</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1605</ID>
+              <ID>1839</ID>
               <Description>"CRITICAL_ALWAYS"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A90D</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1635</ID>
+              <ID>1840</ID>
               <Description>"DAMAGE_ALWAYS_1"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A90E</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1636</ID>
+              <ID>1841</ID>
               <Description>"DAMAGE_ALWAYS_9999"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A90F</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1637</ID>
+              <ID>1842</ID>
               <Description>"DAMAGE_ALWAYS_99999 (?)"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A910</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1638</ID>
+              <ID>1843</ID>
               <Description>"???"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A911</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1639</ID>
+              <ID>1844</ID>
               <Description>"AP_TIMES_100"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A912</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1640</ID>
+              <ID>1845</ID>
               <Description>"GIL_TIMES_100"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A913</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1641</ID>
+              <ID>1846</ID>
               <Description>"???"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A914</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1642</ID>
+              <ID>1847</ID>
               <Description>"???"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A915</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1614</ID>
+              <ID>1848</ID>
               <Description>"OVERDRIVE_NEVER"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A916</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1613</ID>
+              <ID>1849</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A917</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1612</ID>
+              <ID>1850</ID>
               <Description>"ENEMY_CONTROL"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A918</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1611</ID>
+              <ID>1851</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A919</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1610</ID>
+              <ID>1852</ID>
               <Description>""Every Look""</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A91A</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1609</ID>
+              <ID>1853</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A91B</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1608</ID>
+              <ID>1854</ID>
               <Description>""Skip Command""</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A91C</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1607</ID>
+              <ID>1855</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A91D</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1606</ID>
+              <ID>1856</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A91E</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1618</ID>
+              <ID>1857</ID>
               <Description>"MISS_ALWAYS"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A91F</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1617</ID>
+              <ID>1858</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A920</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1616</ID>
+              <ID>1859</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A921</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1615</ID>
+              <ID>1860</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A922</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1621</ID>
+              <ID>1861</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A923</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1620</ID>
+              <ID>1862</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A924</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1619</ID>
+              <ID>1863</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A925</Address>
             </CheatEntry>
             <CheatEntry>
-              <ID>1634</ID>
+              <ID>1864</ID>
               <Description>"Battle ?!"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>FFX.exe+D2A926</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1733</ID>
+          <Description>"MsGetChr (PC = 0x0) (LEN = 0xF90)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>FFX.exe+D334CC</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1778</ID>
+              <Description>"stat_attack_normal_frame (+40C)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+40C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1779</ID>
+              <Description>"stat_attack_near_frame (+40D)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+40D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1780</ID>
+              <Description>"stat_attack_motion_frame (+40E)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+40E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1768</ID>
+              <Description>"stat_direction_fix_flag (+41B)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+41B</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1769</ID>
+              <Description>"stat_direction_change_effect (+41D)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+41D</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1737</ID>
+              <Description>"stat_motion_type (+4AC)"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4AC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1782</ID>
+              <Description>"stat_round (+4B0)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4B0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1786</ID>
+              <Description>"stat_round_return (+4B2)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4B2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1785</ID>
+              <Description>"stat_idle2_prob (+4B8)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+4B8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1784</ID>
+              <Description>"stat_attack_inc_speed (+4B9)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+4B9</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1783</ID>
+              <Description>"stat_attack_dec_speed (+4BA)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+4BA</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1781</ID>
+              <Description>"stat_motion_num (+4BB)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+4BB</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1770</ID>
+              <Description>"motion_attack_start_dist (+4BC)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+4BC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1771</ID>
+              <Description>"motion_attack_offset (+4C0)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+4C0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1772</ID>
+              <Description>"motion_attack_height (+4C4)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+4C4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1773</ID>
+              <Description>"motion_move_backjump_dist (+4C8)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+4C8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1777</ID>
+              <Description>"motion_run_speed_v0 (+4CC)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+4CC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1776</ID>
+              <Description>"motion_run_speed_acc (+4D0)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+4D0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1774</ID>
+              <Description>"motion_run_speed (+4D4)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+4D4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1775</ID>
+              <Description>"motion_run_speed_return (+4D8)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+4D8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1767</ID>
+              <Description>"MaxHP (+594)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+594</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1734</ID>
+              <Description>"MaxMP (+598)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+598</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1735</ID>
+              <Description>"MaxHP2 (+59C)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+59C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1736</ID>
+              <Description>"MaxMP2 (+5A0)"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+5A0</Address>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
@@ -488,6 +944,88 @@
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>FFX.exe+88F508</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1757</ID>
+          <Description>"asmreg_1"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+88F518</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1758</ID>
+          <Description>"asmreg_2"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+88F528</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1752</ID>
+          <Description>"asmreg_3"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+88F538</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1753</ID>
+          <Description>"asmreg_4"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+88F548</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1754</ID>
+          <Description>"asmreg_5"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+88F558</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1755</ID>
+          <Description>"asmreg_6"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+88F568</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1756</ID>
+          <Description>"asmreg_7"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+88F578</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1762</ID>
+          <Description>"asmreg_vf0"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>FFX.exe+88F790</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1761</ID>
+          <Description>"asmreg_vf1"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>FFX.exe+88F7A0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1760</ID>
+          <Description>"asmreg_vf2"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>FFX.exe+88F7B0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1759</ID>
+          <Description>"asmreg_vf3"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>FFX.exe+88F7C0</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>1647</ID>
@@ -3700,6 +4238,14 @@
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
+          <ID>1875</ID>
+          <Description>"AtelDecodeCommandMainMutex (HANDLE)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+852740</Address>
+        </CheatEntry>
+        <CheatEntry>
           <ID>1693</ID>
           <Description>"AtelEventName"</Description>
           <ShowAsSigned>0</ShowAsSigned>
@@ -3709,6 +4255,37 @@
           <CodePage>0</CodePage>
           <ZeroTerminate>1</ZeroTerminate>
           <Address>FFX.exe+1FCBC60</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1748</ID>
+          <Description>"Atelcmdlist"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>FFX.exe+75DB24</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1749</ID>
+              <Description>"Atelcmdlist [0]"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>8</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1750</ID>
+              <Description>"Atelcmdlist [1]"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>8</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
         <CheatEntry>
           <ID>1701</ID>
@@ -3725,6 +4302,14 @@
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>FFX.exe+1FCBD78</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1874</ID>
+          <Description>"btl_config_file"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+1F11400</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>1700</ID>
@@ -3811,6 +4396,55 @@
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+10</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1738</ID>
+          <Description>"EventFontNum"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+1441D50</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1740</ID>
+          <Description>"EventFontFullNameArray"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>FFX.exe+21CC5A0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1739</ID>
+              <Description>"EventFontFullNameArray [0]"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>256</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1741</ID>
+              <Description>"EventFontFullNameArray [1]"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>256</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+100</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1742</ID>
+              <Description>"EventFontFullNameArray [2]"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>256</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+200</Address>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
@@ -3916,6 +4550,13 @@
           <Address>FFX.exe+F3C8D0</Address>
         </CheatEntry>
         <CheatEntry>
+          <ID>1765</ID>
+          <Description>"ms_battle_chr2_flag"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+D39EE4</Address>
+        </CheatEntry>
+        <CheatEntry>
           <ID>11</ID>
           <Description>"ms_debug_chr_select"</Description>
           <ShowAsSigned>0</ShowAsSigned>
@@ -3931,11 +4572,42 @@
           <Address>FFX.exe+D37C2C</Address>
         </CheatEntry>
         <CheatEntry>
+          <ID>1872</ID>
+          <Description>"ms_camera_priority_mask"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+1F11424</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1766</ID>
+          <Description>"btl_file_name_country"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+1F11420</Address>
+        </CheatEntry>
+        <CheatEntry>
           <ID>1703</ID>
           <Description>"sg_count"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>FFX.exe+1FCBBF0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1745</ID>
+          <Description>"x_font_adjust"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+1471668</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1744</ID>
+          <Description>"y_font_adjust"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+147166C</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -4112,7 +4784,54 @@
           <VariableType>4 Bytes</VariableType>
           <Address>FFX.exe+8C9698</Address>
         </CheatEntry>
+        <CheatEntry>
+          <ID>1751</ID>
+          <Description>"yiRenderDisable (???)"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+14DED08</Address>
+        </CheatEntry>
       </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1747</ID>
+      <Description>"MagicFile"</Description>
+      <Options moManualExpandCollapse="1" moAllowManualCollapseAndExpand="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1743</ID>
+          <Description>"currentMagicId"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+864CA0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1746</ID>
+          <Description>"currentHandle"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>FFX.exe+864CA8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1764</ID>
+      <Description>"Phyre::PFramework::PApplication::GetApplication()"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>FFX.exe+8C9DC8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1873</ID>
+      <Description>"Gil count"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>FFX.exe+D307D8</Address>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>

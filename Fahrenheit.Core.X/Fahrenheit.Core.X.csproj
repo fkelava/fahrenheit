@@ -19,12 +19,9 @@
 			<ProjectFiles Include="$(TargetDir)\*.*" />
 		</ItemGroup>
 
-		<Message Text="Copying to $(CopyToDir)" Importance="High"/>
+		<Message Text="Copying to $(CopyToDir)" Importance="High" />
 
-		<Copy
-			SourceFiles="@(ProjectFiles)"
-			DestinationFolder="$(CopyToDir)"
-		/>
+		<Copy SourceFiles="@(ProjectFiles)" DestinationFolder="$(CopyToDir)" />
 
 		<Message Text="Copied build files to $(CopyToDir)." Importance="High" />
 	</Target>

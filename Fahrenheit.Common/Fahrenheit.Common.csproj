@@ -1,4 +1,4 @@
-<Project>
+﻿<Project>
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
@@ -19,17 +19,47 @@
 			<ProjectFiles Include="$(TargetDir)\*.*" />
 		</ItemGroup>
 
-		<Message Text="Copying to $(CopyToDir)" Importance="High"/>
+		<Message Text="Copying to $(CopyToDir)" Importance="High" />
 
-		<Copy
-			SourceFiles="@(ProjectFiles)"
-			DestinationFolder="$(CopyToDir)"
-		/>
+		<Copy SourceFiles="@(ProjectFiles)" DestinationFolder="$(CopyToDir)" />
 
 		<Message Text="Copied build files to $(CopyToDir)." Importance="High" />
 	</Target>
 
 	<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
 	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+	<ItemGroup>
+		<ProjectReference Include="..\Fahrenheit.SGen\Fahrenheit.SGen.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+	</ItemGroup>
+
+	<!-- BEGIN SGen data files -->
+
+	<ItemGroup>
+		<None Remove="Data\DEdit\FhEncodingTable.csv" />
+		<None Remove="Data\WorldMap\FhX2FileList.txt" />
+		<None Remove="Data\WorldMap\FhXFileList.txt" />
+	</ItemGroup>
+	<ItemGroup>
+		<AdditionalFiles Include="Data\DEdit\FhEncodingTable.csv" />
+		<AdditionalFiles Include="Data\WorldMap\FhX2FileList.txt" />
+		<AdditionalFiles Include="Data\WorldMap\FhXFileList.txt" />
+	</ItemGroup>
+
+	<!-- END SGen data files -->
+
+	<!-- BEGIN SGen behavior -->
+
+	<PropertyGroup>
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+		<CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Exclude the output of source generators from the compilation -->
+		<Compile Remove="$(CompilerGeneratedFilesOutputPath)/**/*.cs" />
+	</ItemGroup>
+
+	<!-- END SGen behavior -->
 
 </Project>
