@@ -181,7 +181,7 @@ internal sealed class FhEncoding{localeName} : FhEncoding
     {
         /* [fkelava 23/9/22 17:49]
          * Uncomment the below block to debug the source generator.
-         * UNLOAD FAHRENHEIT.COMMON BEFORE YOU DO THIS, OR IN GENERAL BEFORE YOU EDIT THE SOURCE GENERATOR.
+         * UNLOAD ALL DEPENDENT PROJECTS BEFORE YOU DO THIS, OR IN GENERAL BEFORE YOU EDIT THE SOURCE GENERATOR.
          */
 
         //#if DEBUG
