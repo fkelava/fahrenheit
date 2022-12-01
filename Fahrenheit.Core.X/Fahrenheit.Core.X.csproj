@@ -29,5 +29,12 @@
 	<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
 	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
 
+	<ItemGroup>
+	  <None Remove="Data\FhXFileList.txt" />
+	</ItemGroup>
+	<ItemGroup>
+	  <AdditionalFiles Include="Data\FhXFileList.txt" />
+	</ItemGroup>
+
 </Project>
 

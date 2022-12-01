@@ -45,7 +45,7 @@ public class FhEncodingGenerator : IIncrementalGenerator
         if (sr.ReadLine() is not { } headerLine)
             return false;
 
-        string[] columnHeaders = headerLine.Split(',');
+        string[] columnHeaders   = headerLine.Split(',');
         string[] expectedHeaders = Enum.GetNames(typeof(FhEncodingLocale));
 
         for (int i = 1; i < columnHeaders.Length; i++)

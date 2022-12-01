@@ -1,7 +1,7 @@
 ﻿<Project>
 
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<BaseIntermediateOutputPath>..\obj\Fahrenheit.Common</BaseIntermediateOutputPath>
@@ -37,13 +37,9 @@
 
 	<ItemGroup>
 		<None Remove="Data\DEdit\FhEncodingTable.csv" />
-		<None Remove="Data\WorldMap\FhX2FileList.txt" />
-		<None Remove="Data\WorldMap\FhXFileList.txt" />
 	</ItemGroup>
 	<ItemGroup>
 		<AdditionalFiles Include="Data\DEdit\FhEncodingTable.csv" />
-		<AdditionalFiles Include="Data\WorldMap\FhX2FileList.txt" />
-		<AdditionalFiles Include="Data\WorldMap\FhXFileList.txt" />
 	</ItemGroup>
 
 	<!-- END SGen data files -->

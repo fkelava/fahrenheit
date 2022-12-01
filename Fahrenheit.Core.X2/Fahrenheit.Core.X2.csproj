@@ -1,7 +1,7 @@
 ﻿<Project>
 
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<BaseIntermediateOutputPath>..\obj\Fahrenheit.Core.X2</BaseIntermediateOutputPath>
@@ -28,6 +28,12 @@
 
 	<Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
 	<Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+	<ItemGroup>
+	  <None Remove="Data\FhX2FileList.txt" />
+	</ItemGroup>
+	<ItemGroup>
+	  <AdditionalFiles Include="Data\FhX2FileList.txt" />
+	</ItemGroup>
 
 </Project>
 

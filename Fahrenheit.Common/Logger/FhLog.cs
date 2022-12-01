@@ -40,8 +40,6 @@ public static class FhLog
             Trace.WriteLine($"StackTrace: {ex.StackTrace}");
             Trace.WriteLine($"Message: {ex.Message}");
         }
-
-        Trace.WriteLine($"{UnixMillisUtc()} | This is Fahrenheit.Core.");
     }
 
     public static void Log(LogLevel                  level,
