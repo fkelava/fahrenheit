@@ -101,10 +101,10 @@ public unsafe sealed class FhMallocModule : FhModule {
     /* [fkelava 06/08/26 14:29]
      * We previously experimented with allocating top-down. However, 'persistent' magic effects
      * handled using the `op_*` system seem to exhibit some manner of pointer tagging/truncation bug
-     * which precludes our ability to shift the main pool into the space over 0x7FFF_FFFF.
+     * which causes them to fail to terminate properly when assigned an address over 0x7FFF_FFFF.
      *
-     * This bug recurs regardless as long as the 4GB patch is applied, just less frequently.
-     * Therefore we _temporarily_ disable top-down allocation.
+     * This bug can occur regardless as long as the 4GB patch is applied, just less frequently.
+     * Therefore we must allocate bottom-up until the underlying bug has been resolved.
      */
 
     [UnmanagedCallConv(CallConvs = [ typeof(CallConvCdecl) ] )]
