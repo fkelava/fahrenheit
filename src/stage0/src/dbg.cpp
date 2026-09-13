@@ -37,29 +37,27 @@ static void stage0_dbg_stack_walk(
     stack_frame.AddrStack.Offset = ptr_context->Esp;
     stack_frame.AddrStack.Mode   = AddrModeFlat;
 
-    // TODO: unfuck
+    while (true) {
+        BOOL rv = StackWalk64(
+            IMAGE_FILE_MACHINE_I386,
+            h_process,
+            h_thread,
+            &stack_frame,
+            ptr_context,
+            NULL,
+            SymFunctionTableAccess64,
+            SymGetModuleBase64,
+            NULL
+        );
 
-    //while (true) {
-    //    BOOL rv = StackWalk64(
-    //        IMAGE_FILE_MACHINE_I386,
-    //        h_process,
-    //        h_thread,
-    //        &stack_frame,
-    //        ptr_context,
-    //        NULL,
-    //        &SymFunctionTableAccess64,
-    //        &SymGetModuleBase64,
-    //        NULL
-    //    );
+        if (!rv)
+            break;
 
-    //    if (!rv)
-    //        break;
+        DWORD64 frame_addr = stack_frame.AddrPC.Offset;
 
-    //    DWORD64 frame_addr = stack_frame.AddrPC.Offset;
-
-    //    if (frame_addr == 0)
-    //        break;
-    //}
+        if (frame_addr == 0)
+            break;
+    }
 }
 
 // Filters objects from a core dump being created.
@@ -390,11 +388,14 @@ void stage0_dbg_loop() {
 #if _DEBUG
             std::wcout << "Module loaded: " << module_path << std::endl;
 #endif
-
             /* [fkelava 13/09/26 02:03]
              * > The debugger should close the handle to the DLL while processing LOAD_DLL_DEBUG_EVENT.
+             *
+             * This is one case where we deviate from the guidelines. Since we pass the handle to
+             * SymLoadModuleExW and use deferred symbol loading, we can't close the handle here.
+             *
+             * To do so would cause an access violation at stack-walking time.
              */
-            CloseHandle(module_handle);
         }
 
         if (event_code == UNLOAD_DLL_DEBUG_EVENT) {
