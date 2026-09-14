@@ -58,8 +58,12 @@ static void stage0_dbg_stack_walk(
         if (frame_addr == 0)
             break;
 
-        DWORD64       sym_displacement = 0;
-        PSYMBOL_INFOW ptr_sym          = (PSYMBOL_INFOW) malloc( sizeof(SYMBOL_INFOW) + MAX_SYM_NAME * sizeof(wchar_t) );
+        DWORD64 sym_displacement = 0;
+
+        DWORD sz_sym      = sizeof(SYMBOL_INFOW);
+        DWORD sz_sym_name = sizeof(wchar_t) * MAX_SYM_NAME;
+
+        PSYMBOL_INFOW ptr_sym = (PSYMBOL_INFOW) malloc(sz_sym + sz_sym_name);
 
         if (ptr_sym == NULL) {
             std::wcerr << "Failed to allocate memory for SYMBOL_INFOW, code 0x" << std::hex << errno << std::endl;
@@ -76,10 +80,10 @@ static void stage0_dbg_stack_walk(
             ptr_sym
         )) {
             std::wcerr << "SymFromAddrW() failed with code 0x" << std::hex << GetLastError() << std::endl;
-            break;
+            continue;
         }
 
-        std::wcout << ptr_sym->Name << std::endl;
+        std::wcout << ptr_sym->Name << "+" << std::hex << sym_displacement << std::endl;
 
         free(ptr_sym);
     }
@@ -195,6 +199,7 @@ static DWORD stage0_dbg_exception(
      * > If this member is zero, the debugger has previously encountered the exception.
      *
      * We only "handle" exceptions (i.e. dump core) in the first instance.
+     * Note that we intentionally return DBG_EXCEPTION_NOT_HANDLED so WER, .NET EH et al. function unimpeded.
      */
     if (ptr_info_exception->dwFirstChance == 0)
         return DBG_EXCEPTION_NOT_HANDLED;
@@ -242,9 +247,9 @@ static DWORD stage0_dbg_exception(
 // Determines the size of a loaded/mapped-in module.
 // Original: https://github.com/jrfonseca/drmingw/blob/6824862b34b288524ed6e92806479bb3ec6fab07/src/common/debugger.cpp#L251-L268
 static BOOL stage0_dbg_get_module_size(
-    HANDLE h_process,       // A handle to the process the module is being loaded into.
-    LPVOID ptr_module_base, // The base address of the target module.
-    DWORD& size             // Out-parameter. The size of the module, if the call returns TRUE.
+    HANDLE h_process,       //       A handle to the process the module is being loaded into.
+    LPVOID ptr_module_base, //       The base address of the target module.
+    DWORD& size             // [out] The size of the module, if the call succeeds.
 ) {
     size = 0;
 
@@ -266,6 +271,119 @@ static BOOL stage0_dbg_get_module_size(
     return TRUE;
 }
 
+// Loads a module's symbols.
+static BOOL stage0_dbg_process_module(
+    HANDLE h_process,       //       The handle of the process the module is being loaded into.
+    HANDLE h_module,        //       The handle to the module being loaded.
+    LPVOID ptr_module_base, //       A pointer to the base address of the module itself.
+    DWORD& error_code       // [out] The error code to terminate the process with on failure.
+) {
+    if (h_module == nullptr || h_module == INVALID_HANDLE_VALUE) {
+        std::wcerr << "Invalid DLL handle in LOAD_DLL_DEBUG_EVENT." << std::endl;
+        error_code = ERROR_INVALID_HANDLE;
+
+        return FALSE;
+    }
+
+    /* [fkelava 13/09/26 16:33]
+     * `drmingw` has a fallback path in case this API doesn't work,
+     * such as people running on RAM disks. We do not support this for our own sanity.
+     *
+     * See generally https://learn.microsoft.com/en-us/windows/win32/memory/obtaining-a-file-name-from-a-file-handle,
+     * https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-getfinalpathnamebyhandlew#remarks.
+     */
+    wchar_t module_path[MAX_PATH] = { 0 };
+
+    DWORD sz_module_path = GetFinalPathNameByHandleW(
+        h_module,
+        module_path,
+        sizeof(module_path) / sizeof(wchar_t),
+        FILE_NAME_OPENED
+    );
+
+    if (sz_module_path == 0) {
+        std::wcerr << "[!] GetFinalPathNameByHandleW() failed" << std::endl;
+        error_code = GetLastError();
+
+        return FALSE;
+    }
+
+    if (sz_module_path > MAX_PATH) {
+        std::wcerr << "[!] GetFinalPathNameByHandleW() - path length exceeded MAX_PATH" << std::endl;
+        error_code = ERROR_BUFFER_OVERFLOW;
+
+        return FALSE;
+    }
+
+    /* [fkelava 13/09/26 16:43]
+     * When deferred symbols are in use, the correct DLL size must be passed.
+     * See https://groups.google.com/forum/#!topic/comp.os.ms-windows.programmer.win32/ulkwYhM3020
+     */
+
+    DWORD module_size;
+    if (!stage0_dbg_get_module_size(
+        h_process,
+        ptr_module_base,
+        module_size
+    )) {
+        std::wcerr << "Failed to get the size of module being loaded." << std::endl;
+        error_code = GetLastError();
+
+        return FALSE;
+    }
+
+    DWORD64 module_base_addr = SymLoadModuleExW(
+        h_process,
+        h_module,
+        module_path,
+        NULL,
+        (DWORD64) ptr_module_base,
+        module_size,
+        NULL,
+        0
+    );
+
+    DWORD error_symload = GetLastError();
+    if (module_base_addr == 0 && error_symload != ERROR_SUCCESS) {
+        std::wcerr << "[!] SymLoadModuleExW() failed" << std::endl;
+        error_code = error_symload;
+
+        return FALSE;
+    }
+
+    IMAGEHLP_MODULE64 module_info = { 0 };
+    module_info.SizeOfStruct = sizeof(IMAGEHLP_MODULE64);
+
+    /* [fkelava 13/09/26 14:19]
+     * https://learn.microsoft.com/en-us/windows/win32/api/dbghelp/nf-dbghelp-symloadmoduleex#remarks
+     * > If deferred symbol loading is enabled, the module is marked as deferred and the
+     * > symbols are not loaded until a reference is made to a symbol in the module.
+     * > Therefore, you should always call SymGetModuleInfo64 after calling SymLoadModuleEx.
+     */
+
+    if (!SymGetModuleInfo64(
+        h_process,
+        module_base_addr,
+        &module_info
+    )) {
+        std::wcerr << "[!] SymGetModuleInfo64() failed" << std::endl;
+        error_code = GetLastError();
+
+        return FALSE;
+    }
+
+#if _DEBUG
+    std::wcout << "Module loaded: " << module_path << std::endl;
+#endif
+    /* [fkelava 13/09/26 02:03]
+     * > The debugger should close the handle to the DLL while processing LOAD_DLL_DEBUG_EVENT.
+     *
+     * We deviate from the guidelines. Since we pass the handle to SymLoadModuleExW
+     * and use deferred symbol loading, closing it would AV at stack-walking time.
+     */
+    return TRUE;
+}
+
 // The main loop of the debugger. Handles incoming debug events.
 void stage0_dbg_loop() {
     /* [fkelava 13/09/26 02:39]
@@ -275,7 +393,8 @@ void stage0_dbg_loop() {
      * The relevant passages are given in comments.
      */
 
-    HANDLE h_process = { 0 };
+    HANDLE h_process  = { 0 };
+    DWORD  error_code = ERROR_SUCCESS;
 
     while (true) {
         DEBUG_EVENT event;
@@ -302,15 +421,23 @@ void stage0_dbg_loop() {
                 return;
             }
 
+            if (!stage0_dbg_process_module(
+                h_process,
+                event.u.CreateProcessInfo.hFile,
+                event.u.CreateProcessInfo.lpBaseOfImage,
+                error_code
+            )) {
+                TerminateProcess(h_process, error_code);
+                return;
+            }
+
             /* [fkelava 13/09/26 02:03]
              * > The handle to the process's image file has GENERIC_READ access and is opened for read-sharing.
              * > The debugger should close this handle while processing CREATE_PROCESS_DEBUG_EVENT.
+             *
+             * We deviate from the guidelines. Since we pass the handle to SymLoadModuleExW
+             * and use deferred symbol loading, closing it would AV at stack-walking time.
              */
-            HANDLE image_file_handle = event.u.CreateProcessInfo.hFile;
-
-            if (image_file_handle != nullptr && image_file_handle != INVALID_HANDLE_VALUE) {
-                CloseHandle(image_file_handle);
-            }
         }
 
         // To proceed past this point, we need CREATE_PROCESS_DEBUG_EVENT to arrive first.
@@ -329,114 +456,16 @@ void stage0_dbg_loop() {
          */
 
         if (event_code == LOAD_DLL_DEBUG_EVENT) {
-            HANDLE module_handle = event.u.LoadDll.hFile;
-            LPVOID module_base   = event.u.LoadDll.lpBaseOfDll;
-
-            if (module_handle == nullptr || module_handle == INVALID_HANDLE_VALUE) {
-                std::wcerr << "Invalid DLL handle in LOAD_DLL_DEBUG_EVENT." << std::endl;
-                TerminateProcess(h_process, ERROR_INVALID_HANDLE);
-
-                return;
-            }
-
-            /* [fkelava 13/09/26 16:33]
-             * `drmingw` has a fallback path in case this API doesn't work,
-             * such as people running on RAM disks. We do not support this for our own sanity.
-             *
-             * See generally https://learn.microsoft.com/en-us/windows/win32/memory/obtaining-a-file-name-from-a-file-handle,
-             * https://learn.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-getfinalpathnamebyhandlew#remarks.
-             */
-            wchar_t module_path[MAX_PATH] = { 0 };
-
-            DWORD sz_module_path = GetFinalPathNameByHandleW(
-                module_handle,
-                module_path,
-                sizeof(module_path) / sizeof(wchar_t),
-                FILE_NAME_OPENED
-            );
-
-            if (sz_module_path == 0) {
-                std::wcerr << "[!] GetFinalPathNameByHandleW() failed" << std::endl;
-                TerminateProcess(h_process, GetLastError());
-
-                return;
-            }
-
-            if (sz_module_path > MAX_PATH) {
-                std::wcerr << "[!] GetFinalPathNameByHandleW() - path length exceeded MAX_PATH" << std::endl;
-                TerminateProcess(h_process, ERROR_BUFFER_OVERFLOW);
-
-                return;
-            }
-
-            /* [fkelava 13/09/26 16:43]
-             * When deferred symbols are in use, the correct DLL size must be passed.
-             * See https://groups.google.com/forum/#!topic/comp.os.ms-windows.programmer.win32/ulkwYhM3020
-             */
-
-            DWORD module_size;
-            if (!stage0_dbg_get_module_size(
+            DWORD error_code;
+            if (!stage0_dbg_process_module(
                 h_process,
-                module_base,
-                module_size
+                event.u.LoadDll.hFile,
+                event.u.LoadDll.lpBaseOfDll,
+                error_code
             )) {
-                std::wcerr << "Failed to get the size of module being loaded." << std::endl;
-                TerminateProcess(h_process, GetLastError());
-
+                TerminateProcess(h_process, error_code);
                 return;
             }
-
-            DWORD64 module_base_addr = SymLoadModuleExW(
-                h_process,
-                module_handle,
-                module_path,
-                NULL,
-                (DWORD64) module_base,
-                module_size,
-                NULL,
-                0
-            );
-
-            DWORD error_symload = GetLastError();
-            if (module_base_addr == 0 && error_symload != ERROR_SUCCESS) {
-                std::wcerr << "[!] SymLoadModuleExW() failed" << std::endl;
-                TerminateProcess(h_process, error_symload);
-
-                return;
-            }
-
-            IMAGEHLP_MODULE64 module_info = { 0 };
-            module_info.SizeOfStruct = sizeof(IMAGEHLP_MODULE64);
-
-            /* [fkelava 13/09/26 14:19]
-             * https://learn.microsoft.com/en-us/windows/win32/api/dbghelp/nf-dbghelp-symloadmoduleex#remarks
-             * > If deferred symbol loading is enabled, the module is marked as deferred and the
-             * > symbols are not loaded until a reference is made to a symbol in the module.
-             * > Therefore, you should always call SymGetModuleInfo64 after calling SymLoadModuleEx.
-             */
-
-            if (!SymGetModuleInfo64(
-                h_process,
-                module_base_addr,
-                &module_info
-            )) {
-                std::wcerr << "[!] SymGetModuleInfo64() failed" << std::endl;
-                TerminateProcess(h_process, GetLastError());
-
-                return;
-            }
-
-#if _DEBUG
-            std::wcout << "Module loaded: " << module_path << std::endl;
-#endif
-            /* [fkelava 13/09/26 02:03]
-             * > The debugger should close the handle to the DLL while processing LOAD_DLL_DEBUG_EVENT.
-             *
-             * This is one case where we deviate from the guidelines. Since we pass the handle to
-             * SymLoadModuleExW and use deferred symbol loading, we can't close the handle here.
-             *
-             * To do so would cause an access violation at stack-walking time.
-             */
         }
 
         if (event_code == UNLOAD_DLL_DEBUG_EVENT) {
