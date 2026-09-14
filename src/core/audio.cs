@@ -7,7 +7,10 @@ namespace Fahrenheit;
 
 public class FhAudio {
     /// <summary>Play a game sound with a given ID.</summary>
-    /// <remarks>The sound bank containing the desired sound must be loaded.</remarks>
+    /// <remarks>
+    ///     The sound bank containing the desired sound must be loaded,
+    ///     otherwise this functions will silently fail.
+    /// </remarks>
     /// <param name="sound_id">The ID of the sound to play.</param>
     /// <param name="volume">
     ///     The volume to play the sound at, between <c>0</c> and <c>1</c>.
