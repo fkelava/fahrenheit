@@ -26,6 +26,6 @@ public class FhAudio {
         uint int_volume = uint.CreateSaturating(volume * 127);
         uint int_pan    = uint.CreateSaturating(pan * 127);
 
-        return FhCall.SndSepPlay.fnptr!(sound_id, int_volume, int_pan);
+        return FhCall.SndSepPlay.fnptr!(sound_id, int_pan, int_volume);
     }
 }
