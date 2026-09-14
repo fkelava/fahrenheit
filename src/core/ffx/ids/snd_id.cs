@@ -4,7 +4,8 @@
 // It is licensed to you under the GNU Lesser General Public License, version 3.0 or later. See COPYING, COPYING.LESSER.
 
 public class SoundId {
-    public const uint UI_MOVE = 0x80000001;
-    public const uint UI_CANCEL = 0x80000003;
-    public const uint UI_CONFIRM = 0x80000004;
+    public const uint UI_MOVE     = 0x80000001;
+    public const uint UI_CONFIRM  = 0x80000002;
+    public const uint UI_DISABLED = 0x80000003;
+    public const uint UI_CANCEL   = 0x80000004;
 }
