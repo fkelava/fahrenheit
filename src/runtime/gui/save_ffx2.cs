@@ -1887,10 +1887,12 @@ public sealed class FhSaveUiX2 : FhSaveUi {
         }
 
         if (mouse_clicked(triangle_top, repeat: true)) {
+            FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             _current_scrollable.move_hover(-1);
         }
 
         if (mouse_clicked(triangle_bottom, repeat: true)) {
+            FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             _current_scrollable.move_hover(1);
         }
     }
