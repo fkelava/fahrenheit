@@ -3,6 +3,8 @@
 // This file is part of Fahrenheit, © 2023-2026 The Fahrenheit contributors.
 // It is licensed to you under the GNU Lesser General Public License, version 3.0 or later. See COPYING, COPYING.LESSER.
 
+using Fahrenheit.FFX2.Ids;
+
 namespace Fahrenheit.Runtime.Gui;
 
 /*
@@ -159,17 +161,26 @@ public sealed class FhSaveUiX2 : FhSaveUi {
             if (FhApi.Gui.is_any_pressed(FhApi.Gui.keys_up)
              && _current_scrollable.hovered == 0
             ) {
+                FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
                 _focus = UiFocus.ACTIVE_SET;
                 return true;
             }
         }
 
+        int old_hovered = _current_scrollable.hovered;
+
         _current_scrollable.handle_input();
+
+        if (_current_scrollable.hovered != old_hovered) {
+            FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
+        }
 
         if (FhApi.Gui.is_any_pressed(FhApi.Gui.keys_confirm)) {
             int hovered = _current_scrollable.hovered;
 
             if (_mode == UiMode.SAVE_LIST) {
+                FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
+
                 if (is_saving && hovered == 0) {
                     fade_out(() => FhApi.Saves.save(0));
                 }
@@ -182,6 +193,8 @@ public sealed class FhSaveUiX2 : FhSaveUi {
             }
 
             if (_mode == UiMode.SET_SWAP) {
+                FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.PAGE_TURN);
+
                 string hovered_set = _set_list[hovered];
                 switch_set(hovered_set);
 
@@ -194,6 +207,8 @@ public sealed class FhSaveUiX2 : FhSaveUi {
 
     private bool handle_input_active_set() {
         if (_mode == UiMode.SAVE_LIST && FhApi.Gui.is_any_pressed(FhApi.Gui.keys_down) && _current_scrollable.max > 0) {
+            FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
+
             _focus = UiFocus.LIST;
             _current_scrollable.hovered = _current_scrollable.current;
 
@@ -201,6 +216,7 @@ public sealed class FhSaveUiX2 : FhSaveUi {
         }
 
         if (FhApi.Gui.is_any_pressed(FhApi.Gui.keys_confirm)) {
+            FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.PAGE_TURN);
             change_mode(UiMode.SET_SWAP);
             return true;
         }
@@ -215,6 +231,8 @@ public sealed class FhSaveUiX2 : FhSaveUi {
         if (_focus == UiFocus.ACTIVE_SET && handle_input_active_set()) return;
 
         if (FhApi.Gui.is_any_pressed(FhApi.Gui.keys_cancel)) {
+            FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_CANCEL);
+
             if (_mode == UiMode.SET_SWAP)
                 change_mode(UiMode.SAVE_LIST);
             else
@@ -787,7 +805,8 @@ public sealed class FhSaveUiX2 : FhSaveUi {
 
         UV bg_suv = bg_screen.as_uv();
 
-        if (mouse_hovered(bg_screen)) {
+        if (mouse_hovered(bg_screen) && _focus != UiFocus.ACTIVE_SET) {
+            FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             _focus = UiFocus.ACTIVE_SET;
         }
 
@@ -861,6 +880,7 @@ public sealed class FhSaveUiX2 : FhSaveUi {
 
         // Input handling
         if (mouse_clicked(bg_screen)) {
+            FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.PAGE_TURN);
             change_mode(UiMode.SET_SWAP);
         }
     }
@@ -908,6 +928,10 @@ public sealed class FhSaveUiX2 : FhSaveUi {
         float font_size = 38f * font_scale;
 
         if (mouse_hovered(button_scaled)) {
+            if (_focus != UiFocus.LIST || _scrollable_sets.hovered != set_idx) {
+                FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
+            }
+
             _focus = UiFocus.LIST;
             _scrollable_sets.hovered = set_idx;
         }
@@ -989,6 +1013,7 @@ public sealed class FhSaveUiX2 : FhSaveUi {
 
         if (mouse_clicked(button_scaled)) {
             io.WantCaptureMouse = true;
+            FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.PAGE_TURN);
             switch_set(name);
         }
     }
@@ -1128,6 +1153,10 @@ public sealed class FhSaveUiX2 : FhSaveUi {
 
         // We set the hovered state early to potentially use it later.
         if (mouse_hovered(save_rect.scale_to_aspect(aspect_helper))) {
+            if (_focus != UiFocus.LIST || _scrollable_saves.hovered != index) {
+                FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
+            }
+
             _focus = UiFocus.LIST;
             _scrollable_saves.hovered = index;
         }
@@ -1254,6 +1283,7 @@ public sealed class FhSaveUiX2 : FhSaveUi {
 
         // Handle input
         if (mouse_clicked(save_rect.scale_to_aspect(aspect_helper))) {
+            FFX2.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             fade_out(() => execute(save.slot));
         }
     }

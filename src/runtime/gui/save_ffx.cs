@@ -3,6 +3,8 @@
 // This file is part of Fahrenheit, © 2023-2026 The Fahrenheit contributors.
 // It is licensed to you under the GNU Lesser General Public License, version 3.0 or later. See COPYING, COPYING.LESSER.
 
+using Fahrenheit.FFX.Ids;
+
 namespace Fahrenheit.Runtime.Gui;
 
 /*
@@ -195,7 +197,7 @@ public sealed class FhSaveUiX : FhSaveUi {
             }
 
             if (_mode == UiMode.SET_SWAP) {
-                FFX.FhCall.SndSepPlay.fnptr!(SoundId.PAGE_TURN, 63, 192);
+                FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.PAGE_TURN);
 
                 string hovered_set = _set_list[hovered];
                 switch_set(hovered_set);
@@ -218,7 +220,7 @@ public sealed class FhSaveUiX : FhSaveUi {
         }
 
         if (FhApi.Gui.is_any_pressed(FhApi.Gui.keys_confirm)) {
-            FFX.FhCall.SndSepPlay.fnptr!(SoundId.PAGE_TURN, 63, 192);
+            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.PAGE_TURN);
             change_mode(UiMode.SET_SWAP);
             return true;
         }
@@ -604,7 +606,7 @@ public sealed class FhSaveUiX : FhSaveUi {
         UV bg_suv = bg_screen.as_uv();
 
         if (mouse_hovered(bg_screen) && _focus != UiFocus.ACTIVE_SET) {
-            FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_ACTION, 63, 127);
+            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             _focus = UiFocus.ACTIVE_SET;
         }
 
@@ -639,7 +641,7 @@ public sealed class FhSaveUiX : FhSaveUi {
 
         // Input handling
         if (mouse_clicked(bg_screen)) {
-            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
+            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.PAGE_TURN);
             change_mode(UiMode.SET_SWAP);
         }
     }
@@ -689,7 +691,7 @@ public sealed class FhSaveUiX : FhSaveUi {
 
         if (mouse_hovered(button_scaled)) {
             if (_focus != UiFocus.LIST || _scrollable_sets.hovered != set_idx) {
-                FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_ACTION, 63, 127);
+                FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             }
 
             _focus = UiFocus.LIST;
@@ -749,7 +751,7 @@ public sealed class FhSaveUiX : FhSaveUi {
         // Handle input
         if (mouse_clicked(button_scaled)) {
             io.WantCaptureMouse = true;
-            FFX.FhCall.SndSepPlay.fnptr!(SoundId.PAGE_TURN, 63, 192);
+            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.PAGE_TURN);
             switch_set(name);
         }
     }
@@ -898,7 +900,7 @@ public sealed class FhSaveUiX : FhSaveUi {
         // We set the hovered state early to potentially use it later.
         if (mouse_hovered(save_rect.scale_to_aspect(aspect_helper))) {
             if (_focus != UiFocus.LIST || _scrollable_saves.hovered != index) {
-                FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_ACTION, 63, 127);
+                FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             }
 
             _focus = UiFocus.LIST;
@@ -1128,7 +1130,7 @@ public sealed class FhSaveUiX : FhSaveUi {
 
         if (mouse_hovered(save_rect.scale_to_aspect(aspect_helper))) {
             if (_focus != UiFocus.LIST || _scrollable_saves.hovered != 0) {
-                FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_ACTION, 63, 127);
+                FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             }
 
             _focus = UiFocus.LIST;
