@@ -57,6 +57,31 @@ static void stage0_dbg_stack_walk(
 
         if (frame_addr == 0)
             break;
+
+        DWORD64       sym_displacement = 0;
+        PSYMBOL_INFOW ptr_sym          = (PSYMBOL_INFOW) malloc( sizeof(SYMBOL_INFOW) + MAX_SYM_NAME * sizeof(wchar_t) );
+
+        if (ptr_sym == NULL) {
+            std::wcerr << "Failed to allocate memory for SYMBOL_INFOW, code 0x" << std::hex << errno << std::endl;
+            break;
+        }
+
+        ptr_sym->SizeOfStruct = sizeof(SYMBOL_INFOW);
+        ptr_sym->MaxNameLen   = MAX_SYM_NAME;
+
+        if (!SymFromAddrW(
+            h_process,
+            frame_addr,
+            &sym_displacement,
+            ptr_sym
+        )) {
+            std::wcerr << "SymFromAddrW() failed with code 0x" << std::hex << GetLastError() << std::endl;
+            break;
+        }
+
+        std::wcout << ptr_sym->Name << std::endl;
+
+        free(ptr_sym);
     }
 }
 
@@ -108,20 +133,21 @@ static void stage0_dbg_create_dump(
       | MiniDumpWithUnloadedModules);
 
     /* [fkelava 11/06/26 21:24]
-     * Here we have a problem. MiniDumpWriteDump expects, in MINIDUMP_EXCEPTION_INFORMATION, a PEXCEPTION_POINTERS
-     * consisting of a CONTEXT and EXCEPTION_RECORD. But a debugger, in EXCEPTION_DEBUG_INFO, only gets an EXCEPTION_RECORD.
+     * MiniDumpWriteDump expects, in MINIDUMP_EXCEPTION_INFORMATION, a PEXCEPTION_POINTERS
+     * (a CONTEXT and EXCEPTION_RECORD). But a debugger, in EXCEPTION_DEBUG_INFO, only gets the latter.
      *
-     * Stage0 being a debugger, GetThreadContext solves that, but there's a catch. MINIDUMP_EXCEPTION_INFORMATION has a ClientPointers field:
+     * GetThreadContext solves that, but there's a catch. MINIDUMP_EXCEPTION_INFORMATION has a ClientPointers field:
      * > Determines where to get the memory regions pointed to by the ExceptionPointers member.
-     * > Set to TRUE if the memory resides in the process being debugged (the target process of the debugger). Otherwise, set to FALSE {...}
+     * > Set to TRUE if the memory resides in the process being debugged {...} Otherwise, set to FALSE {...}
      *
-     * You'd think TRUE applies in this case. Not so: that results in the dump not having an exception record stored.
-     * Because the context is created _here_, FALSE leads to it being properly found. But that, _too_, cannot be correct;
-     * the exception record resides in the process being debugged, while the context resides in the debugger.
+     * You'd think TRUE is correct. Not so: the dump then has 'no exception context stored'.
+     * Because the context is created _here_, FALSE solves that problem. But that, _too_, cannot be correct;
+     * the context resides in the debugger, but the pointers in the exception record certainly do not.
      *
-     * What to do then? The docs do not say, and no example is readily found. We use FALSE as the lesser evil.
+     * What then? The docs do not say. We use FALSE as the lesser evil. We are not alone in this: see
+     * https://github.com/jrfonseca/drmingw/blob/6824862b34b288524ed6e92806479bb3ec6fab07/src/common/debugger.cpp#L577.
      *
-     * See:
+     * See also:
      * - https://learn.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-exception_debug_info
      * - https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-exception_pointers
      * - https://learn.microsoft.com/en-us/windows/win32/api/minidumpapiset/ns-minidumpapiset-minidump_exception_information
@@ -227,7 +253,7 @@ static BOOL stage0_dbg_get_module_size(
 
         MEMORY_BASIC_INFORMATION mem_info;
         if (VirtualQueryEx(h_process, ptr_current, &mem_info, sizeof(mem_info)) == 0) {
-            std::wcerr << "VirtualQueryEx() failed with code 0x" << std::hex << GetLastError() << std::endl;
+            std::wcerr << "[!] VirtualQueryEx() failed" << std::endl;
             return FALSE;
         }
 
@@ -265,11 +291,14 @@ void stage0_dbg_loop() {
             h_process = event.u.CreateProcessInfo.hProcess;
 
             SymSetOptions(
-                SYMOPT_DEFERRED_LOADS         // Only load symbols at point of use, i.e. the stack walk.
+                SYMOPT_UNDNAME                // Undecorate/demangle names where possible.
+              | SYMOPT_DEFERRED_LOADS         // Only load symbols at point of use, i.e. the stack walk.
               | SYMOPT_FAIL_CRITICAL_ERRORS); // Fail silently, without prompting.
 
             if (!SymInitializeW(h_process, NULL, FALSE)) {
-                std::wcerr << "SymInitialize failed with code 0x" << std::hex << GetLastError() << std::endl;
+                std::wcerr << "[!] SymInitializeW failed" << std::endl;
+                TerminateProcess(h_process, GetLastError());
+
                 return;
             }
 
@@ -305,7 +334,9 @@ void stage0_dbg_loop() {
 
             if (module_handle == nullptr || module_handle == INVALID_HANDLE_VALUE) {
                 std::wcerr << "Invalid DLL handle in LOAD_DLL_DEBUG_EVENT." << std::endl;
-                continue;
+                TerminateProcess(h_process, ERROR_INVALID_HANDLE);
+
+                return;
             }
 
             /* [fkelava 13/09/26 16:33]
@@ -325,13 +356,17 @@ void stage0_dbg_loop() {
             );
 
             if (sz_module_path == 0) {
-                std::wcerr << "GetFinalPathNameByHandleW() failed with code 0x" << std::hex << GetLastError() << std::endl;
-                continue;
+                std::wcerr << "[!] GetFinalPathNameByHandleW() failed" << std::endl;
+                TerminateProcess(h_process, GetLastError());
+
+                return;
             }
 
             if (sz_module_path > MAX_PATH) {
-                std::wcerr << "GetFinalPathNameByHandleW() - path length exceeded MAX_PATH" << std::endl;
-                continue;
+                std::wcerr << "[!] GetFinalPathNameByHandleW() - path length exceeded MAX_PATH" << std::endl;
+                TerminateProcess(h_process, ERROR_BUFFER_OVERFLOW);
+
+                return;
             }
 
             /* [fkelava 13/09/26 16:43]
@@ -346,7 +381,9 @@ void stage0_dbg_loop() {
                 module_size
             )) {
                 std::wcerr << "Failed to get the size of module being loaded." << std::endl;
-                continue;
+                TerminateProcess(h_process, GetLastError());
+
+                return;
             }
 
             DWORD64 module_base_addr = SymLoadModuleExW(
@@ -362,7 +399,9 @@ void stage0_dbg_loop() {
 
             DWORD error_symload = GetLastError();
             if (module_base_addr == 0 && error_symload != ERROR_SUCCESS) {
-                std::wcerr << "SymLoadModuleEx() failed with code 0x" << std::hex << error_symload << std::endl;
+                std::wcerr << "[!] SymLoadModuleExW() failed" << std::endl;
+                TerminateProcess(h_process, error_symload);
+
                 return;
             }
 
@@ -381,8 +420,10 @@ void stage0_dbg_loop() {
                 module_base_addr,
                 &module_info
             )) {
-                std::wcerr << "SymGetModuleInfo64() failed with code 0x" << std::hex << GetLastError() << std::endl;
-                continue;
+                std::wcerr << "[!] SymGetModuleInfo64() failed" << std::endl;
+                TerminateProcess(h_process, GetLastError());
+
+                return;
             }
 
 #if _DEBUG
