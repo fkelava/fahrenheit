@@ -17,6 +17,47 @@
 
 #include "fhstage0.h"
 
+static void stage0_dbg_symbolicate(
+    HANDLE       h_process,
+    STACKFRAME64 stack_frame
+) {
+    DWORD64 frame_addr = stack_frame.AddrPC.Offset;
+
+    IMAGEHLP_MODULEW64 module = { 0 };
+    module.SizeOfStruct = sizeof(IMAGEHLP_MODULEW64);
+
+    if (!SymGetModuleInfoW64(
+        h_process,
+        frame_addr,
+        &module
+    )) {
+        std::wcerr << "SymGetModuleInfoW64() failed with code 0x" << std::hex << GetLastError() << std::endl;
+        return;
+    }
+
+    /*
+     *
+     *
+     *
+     */
+    SYMBOL_INFO_PACKAGEW sym = { 0 };
+    sym.si.SizeOfStruct = sizeof(SYMBOL_INFOW);
+    sym.si.MaxNameLen   = MAX_SYM_NAME;
+
+    DWORD64 sym_displacement = 0;
+    if (!SymFromAddrW(
+        h_process,
+        frame_addr,
+        &sym_displacement,
+        &sym.si
+    )) {
+        std::wcerr << "SymFromAddrW() failed with code 0x" << std::hex << GetLastError() << std::endl;
+        return;
+    }
+
+    std::wcout << module.ModuleName << "!" << sym.si.Name << "+" << std::hex << sym_displacement << std::endl;
+}
+
 static void stage0_dbg_stack_walk(
     HANDLE   h_process,
     HANDLE   h_thread,
@@ -53,39 +94,10 @@ static void stage0_dbg_stack_walk(
         if (!rv)
             break;
 
-        DWORD64 frame_addr = stack_frame.AddrPC.Offset;
-
-        if (frame_addr == 0)
+        if (stack_frame.AddrPC.Offset == 0)
             break;
 
-        DWORD64 sym_displacement = 0;
-
-        DWORD sz_sym      = sizeof(SYMBOL_INFOW);
-        DWORD sz_sym_name = sizeof(wchar_t) * MAX_SYM_NAME;
-
-        PSYMBOL_INFOW ptr_sym = (PSYMBOL_INFOW) malloc(sz_sym + sz_sym_name);
-
-        if (ptr_sym == NULL) {
-            std::wcerr << "Failed to allocate memory for SYMBOL_INFOW, code 0x" << std::hex << errno << std::endl;
-            break;
-        }
-
-        ptr_sym->SizeOfStruct = sizeof(SYMBOL_INFOW);
-        ptr_sym->MaxNameLen   = MAX_SYM_NAME;
-
-        if (!SymFromAddrW(
-            h_process,
-            frame_addr,
-            &sym_displacement,
-            ptr_sym
-        )) {
-            std::wcerr << "SymFromAddrW() failed with code 0x" << std::hex << GetLastError() << std::endl;
-            continue;
-        }
-
-        std::wcout << ptr_sym->Name << "+" << std::hex << sym_displacement << std::endl;
-
-        free(ptr_sym);
+        stage0_dbg_symbolicate(h_process, stack_frame);
     }
 }
 
