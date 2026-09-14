@@ -7,7 +7,6 @@ namespace Fahrenheit.FFX2.Ids;
 
 public class SoundId {
     public const uint UI_ACTION   = 0x80000001;
-    public const uint UI_CONFIRM  = 0x80000002;
     public const uint UI_DISABLED = 0x80000003;
     public const uint UI_CANCEL   = 0x80000004;
     public const uint PAGE_TURN   = 0x80000030;
