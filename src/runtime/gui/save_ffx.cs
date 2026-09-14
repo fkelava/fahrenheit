@@ -163,7 +163,7 @@ public sealed class FhSaveUiX : FhSaveUi {
             if (FhApi.Gui.is_any_pressed(FhApi.Gui.keys_up)
              && _current_scrollable.hovered == 0
             ) {
-                FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_MOVE);
+                FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
                 _focus = UiFocus.ACTIVE_SET;
                 return true;
             }
@@ -174,15 +174,15 @@ public sealed class FhSaveUiX : FhSaveUi {
         _current_scrollable.handle_input();
 
         if (_current_scrollable.hovered != old_hovered) {
-            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_MOVE);
+            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
         }
 
         if (FhApi.Gui.is_any_pressed(FhApi.Gui.keys_confirm)) {
-            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_CONFIRM);
-
             int hovered = _current_scrollable.hovered;
 
             if (_mode == UiMode.SAVE_LIST) {
+                FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
+
                 if (is_saving && hovered == 0) {
                     fade_out(() => FhApi.Saves.save(0));
                 }
@@ -195,6 +195,8 @@ public sealed class FhSaveUiX : FhSaveUi {
             }
 
             if (_mode == UiMode.SET_SWAP) {
+                FFX.FhCall.SndSepPlay.fnptr!(SoundId.PAGE_TURN, 63, 192);
+
                 string hovered_set = _set_list[hovered];
                 switch_set(hovered_set);
 
@@ -207,7 +209,7 @@ public sealed class FhSaveUiX : FhSaveUi {
 
     private bool handle_input_active_set() {
         if (_mode == UiMode.SAVE_LIST && FhApi.Gui.is_any_pressed(FhApi.Gui.keys_down) && _current_scrollable.max > 0) {
-            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_MOVE);
+            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
 
             _focus = UiFocus.LIST;
             _current_scrollable.hovered = _current_scrollable.current;
@@ -216,7 +218,7 @@ public sealed class FhSaveUiX : FhSaveUi {
         }
 
         if (FhApi.Gui.is_any_pressed(FhApi.Gui.keys_confirm)) {
-            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_CONFIRM);
+            FFX.FhCall.SndSepPlay.fnptr!(SoundId.PAGE_TURN, 63, 192);
             change_mode(UiMode.SET_SWAP);
             return true;
         }
@@ -602,7 +604,7 @@ public sealed class FhSaveUiX : FhSaveUi {
         UV bg_suv = bg_screen.as_uv();
 
         if (mouse_hovered(bg_screen) && _focus != UiFocus.ACTIVE_SET) {
-            FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_MOVE, 63, 127);
+            FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_ACTION, 63, 127);
             _focus = UiFocus.ACTIVE_SET;
         }
 
@@ -637,7 +639,7 @@ public sealed class FhSaveUiX : FhSaveUi {
 
         // Input handling
         if (mouse_clicked(bg_screen)) {
-            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_CONFIRM);
+            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             change_mode(UiMode.SET_SWAP);
         }
     }
@@ -687,7 +689,7 @@ public sealed class FhSaveUiX : FhSaveUi {
 
         if (mouse_hovered(button_scaled)) {
             if (_focus != UiFocus.LIST || _scrollable_sets.hovered != set_idx) {
-                FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_MOVE, 63, 127);
+                FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_ACTION, 63, 127);
             }
 
             _focus = UiFocus.LIST;
@@ -747,7 +749,7 @@ public sealed class FhSaveUiX : FhSaveUi {
         // Handle input
         if (mouse_clicked(button_scaled)) {
             io.WantCaptureMouse = true;
-            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_CONFIRM);
+            FFX.FhCall.SndSepPlay.fnptr!(SoundId.PAGE_TURN, 63, 192);
             switch_set(name);
         }
     }
@@ -896,7 +898,7 @@ public sealed class FhSaveUiX : FhSaveUi {
         // We set the hovered state early to potentially use it later.
         if (mouse_hovered(save_rect.scale_to_aspect(aspect_helper))) {
             if (_focus != UiFocus.LIST || _scrollable_saves.hovered != index) {
-                FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_MOVE, 63, 127);
+                FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_ACTION, 63, 127);
             }
 
             _focus = UiFocus.LIST;
@@ -1103,7 +1105,7 @@ public sealed class FhSaveUiX : FhSaveUi {
 
         // Handle input
         if (mouse_clicked(save_rect.scale_to_aspect(aspect_helper))) {
-            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_CONFIRM);
+            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             fade_out(() => execute(save.slot));
         }
     }
@@ -1126,7 +1128,7 @@ public sealed class FhSaveUiX : FhSaveUi {
 
         if (mouse_hovered(save_rect.scale_to_aspect(aspect_helper))) {
             if (_focus != UiFocus.LIST || _scrollable_saves.hovered != 0) {
-                FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_MOVE, 63, 127);
+                FFX.FhCall.SndSepPlay.fnptr!(SoundId.UI_ACTION, 63, 127);
             }
 
             _focus = UiFocus.LIST;
@@ -1187,7 +1189,7 @@ public sealed class FhSaveUiX : FhSaveUi {
 
         // Handle input
         if (mouse_clicked(save_rect.scale_to_aspect(aspect_helper))) {
-            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_CONFIRM);
+            FFX.FhCall.SndSepPlaySimple.fnptr!(SoundId.UI_ACTION);
             fade_out(() => FhApi.Saves.save(0));
         }
     }
