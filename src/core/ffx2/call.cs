@@ -399,16 +399,6 @@ public static unsafe partial class FhCall {
         => new( new FhMethodLocation("FFX-2.exe", 0x319360) );
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate uint d_SndSepPlay(uint sound_id, uint pan, uint volume);
-    public static FhMethodHandle<d_SndSepPlay> SndSepPlay
-        => new( new FhMethodLocation("FFX-2.exe", 0x344720) );
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate uint d_SndSepPlaySimple(uint sound_id);
-    public static FhMethodHandle<d_SndSepPlaySimple> SndSepPlaySimple
-        => new( new FhMethodLocation("FFX-2.exe", 0x344760) );
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     public delegate void d_TOBtlDrawATBGaude(int arg1, int arg2, int arg3);
     public static FhMethodHandle<d_TOBtlDrawATBGaude> TOBtlDrawATBGaude
         => new( new FhMethodLocation("FFX-2.exe", 0x356590) );

@@ -1206,16 +1206,6 @@ public static partial class FhCall {
         => new( new FhMethodLocation("FFX.exe", 0x4796E0) );
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate void d_SndSepPlaySimple(uint sound_id);
-    public static FhMethodHandle<d_SndSepPlaySimple> SndSepPlaySimple
-        => new( new FhMethodLocation("FFX.exe", 0x486DE0) );
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate void d_SndSepPlay(uint sound_id, uint volume, uint pan);
-    public static FhMethodHandle<d_SndSepPlay> SndSepPlay
-        => new( new FhMethodLocation("FFX.exe", 0x486DB0) );
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     public delegate void d_TkMsImportantSet(uint arg1);
     public static FhMethodHandle<d_TkMsImportantSet> TkMsImportantSet
         => new( new FhMethodLocation("FFX.exe", 0x48E700) );
