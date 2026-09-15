@@ -185,11 +185,11 @@ public sealed class FhSaveUiX : FhSaveUi {
             }
         }
 
-        int old_current = _current_scrollable.current;
+        int old_hovered = _current_scrollable.hovered;
 
         bool scrollable_input_held = _current_scrollable.handle_input();
 
-        if (_current_scrollable.current != old_current) {
+        if (_current_scrollable.hovered != old_hovered) {
             FhApi.Audio.play_sound(SoundId.UI_ACTION, volume: get_move_volume());
             _audio_fade_helper.tick(1f);
         }
