@@ -166,7 +166,7 @@ public sealed class FhSaveUiX : FhSaveUi {
     }
 
     private float get_move_volume() {
-        return 0.5f + _audio_fade_helper.progress * 0.5f;
+        return 0.5f + (1f - _audio_fade_helper.progress) * 0.5f;
     }
 
     private bool handle_input_list() {
@@ -184,8 +184,6 @@ public sealed class FhSaveUiX : FhSaveUi {
                 return true;
             }
         }
-
-        int old_hovered = _current_scrollable.hovered;
 
         bool scrollable_input_held = _current_scrollable.handle_input();
 

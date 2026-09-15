@@ -56,6 +56,10 @@ public sealed class FhSaveUiX2 : FhSaveUi {
     private readonly float      _fade_length = FhUtil.select(0.5f, 0.35f, 0.0f);
     private readonly FadeHelper _fade;
 
+    private readonly Fahrenheit.Gui.Timer _audio_fade_helper = new(50f);
+
+    private bool _audio_fade_helper_restart = true;
+
     private readonly List<string> _set_list = [ ];
 
     private bool _loaded_all_textures;
@@ -123,6 +127,8 @@ public sealed class FhSaveUiX2 : FhSaveUi {
 
         if (!try_load_textures()) return;
 
+        _audio_fade_helper_restart = true;
+
         handle_input();
 
         ui_background();
@@ -140,6 +146,10 @@ public sealed class FhSaveUiX2 : FhSaveUi {
         ui_scrollbar();
 
         ui_fade();
+
+        if (_audio_fade_helper_restart) {
+            _audio_fade_helper.restart();
+        }
     }
 
     private void fade_out(Action action) {
@@ -149,6 +159,10 @@ public sealed class FhSaveUiX2 : FhSaveUi {
             _fade_length * _fade.progress,
             action
         );
+    }
+
+    private float get_move_volume() {
+        return 0.25f + (1f - _audio_fade_helper.progress) * 0.25f;
     }
 
     private bool handle_input_list() {
@@ -167,12 +181,12 @@ public sealed class FhSaveUiX2 : FhSaveUi {
             }
         }
 
-        int old_hovered = _current_scrollable.hovered;
+        bool scrollable_input_held = _current_scrollable.handle_input();
 
-        _current_scrollable.handle_input();
-
-        if (_current_scrollable.hovered != old_hovered) {
-            FhApi.Audio.play_sound(SoundId.UI_ACTION, volume: 0.5f);
+        if (scrollable_input_held) {
+            FhApi.Audio.play_sound(SoundId.UI_ACTION, volume: get_move_volume());
+            _audio_fade_helper.tick(1f);
+            _audio_fade_helper_restart = false;
         }
 
         if (FhApi.Gui.is_any_pressed(FhApi.Gui.keys_confirm)) {
@@ -1887,12 +1901,20 @@ public sealed class FhSaveUiX2 : FhSaveUi {
         }
 
         if (mouse_clicked(triangle_top, repeat: true)) {
-            FhApi.Audio.play_sound(SoundId.UI_ACTION, volume: 0.5f);
+            FhApi.Audio.play_sound(SoundId.UI_ACTION, volume: get_move_volume());
+
+            _audio_fade_helper.tick(1f);
+            _audio_fade_helper_restart = false;
+
             _current_scrollable.move_hover(-1);
         }
 
         if (mouse_clicked(triangle_bottom, repeat: true)) {
-            FhApi.Audio.play_sound(SoundId.UI_ACTION, volume: 0.5f);
+            FhApi.Audio.play_sound(SoundId.UI_ACTION, volume: get_move_volume());
+
+            _audio_fade_helper.tick(1f);
+            _audio_fade_helper_restart = false;
+
             _current_scrollable.move_hover(1);
         }
     }
