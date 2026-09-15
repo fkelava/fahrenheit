@@ -5,7 +5,7 @@
 
 namespace Fahrenheit;
 
-public class FhAudio {
+public sealed class FhAudio {
     /// <summary>Play a game sound with a given ID.</summary>
     /// <remarks>
     ///     The sound bank containing the desired sound must be loaded,
@@ -27,7 +27,7 @@ public class FhAudio {
         pan    = float.Clamp(pan,    0.0f, 1.0f);
 
         uint int_volume = uint.CreateSaturating(volume * 127);
-        uint int_pan    = uint.CreateSaturating(pan * 127);
+        uint int_pan    = uint.CreateSaturating(pan    * 127);
 
         return FhCall.SndSepPlay.fnptr!(sound_id, int_pan, int_volume);
     }
