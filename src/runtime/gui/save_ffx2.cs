@@ -56,7 +56,7 @@ public sealed class FhSaveUiX2 : FhSaveUi {
     private readonly float      _fade_length = FhUtil.select(0.5f, 0.35f, 0.0f);
     private readonly FadeHelper _fade;
 
-    private readonly Fahrenheit.Gui.Timer _audio_fade_helper = new(50f);
+    private readonly Fahrenheit.Gui.Timer _audio_fade_helper = new(30f);
 
     private bool _audio_fade_helper_restart = true;
 
