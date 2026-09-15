@@ -181,11 +181,16 @@ public sealed class FhSaveUiX2 : FhSaveUi {
             }
         }
 
+        int old_current = _current_scrollable.current;
+
         bool scrollable_input_held = _current_scrollable.handle_input();
 
-        if (scrollable_input_held) {
+        if (_current_scrollable.current != old_current) {
             FhApi.Audio.play_sound(SoundId.UI_ACTION, volume: get_move_volume());
             _audio_fade_helper.tick(1f);
+        }
+
+        if (scrollable_input_held) {
             _audio_fade_helper_restart = false;
         }
 
@@ -1902,20 +1907,22 @@ public sealed class FhSaveUiX2 : FhSaveUi {
 
         if (mouse_clicked(triangle_top, repeat: true)) {
             FhApi.Audio.play_sound(SoundId.UI_ACTION, volume: get_move_volume());
-
             _audio_fade_helper.tick(1f);
-            _audio_fade_helper_restart = false;
 
             _current_scrollable.move_hover(-1);
         }
 
         if (mouse_clicked(triangle_bottom, repeat: true)) {
             FhApi.Audio.play_sound(SoundId.UI_ACTION, volume: get_move_volume());
-
             _audio_fade_helper.tick(1f);
-            _audio_fade_helper_restart = false;
 
             _current_scrollable.move_hover(1);
+        }
+
+        if ((mouse_hovered(triangle_top) || mouse_hovered(triangle_bottom))
+         && ImGui.IsMouseDown(ImGuiMouseButton.Left)
+        ) {
+            _audio_fade_helper_restart = false;
         }
     }
 
