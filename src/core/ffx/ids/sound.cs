@@ -17,9 +17,9 @@ public class SoundId {
 
     public const uint LEVEL_UP_CHIME = 0x80000017;
 
-    public const uint CHEST_OPEN    = 0x80000009;
-    public const uint TRESURE_CHIME = 0x80000026;
-    public const uint STEAL         = 0x80000041;
+    public const uint CHEST_OPEN     = 0x80000009;
+    public const uint TREASURE_CHIME = 0x80000026;
+    public const uint STEAL          = 0x80000041;
 
     public const uint PUZZLE_SOLVED_CHIME = 0x80000016;
     public const uint CELESTIAL_SHINE     = 0x8000003D;
